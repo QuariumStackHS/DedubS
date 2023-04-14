@@ -1,6 +1,0 @@
-
-  }
-  return false;
-}
-
-bool Server::remove_mount_point(const st

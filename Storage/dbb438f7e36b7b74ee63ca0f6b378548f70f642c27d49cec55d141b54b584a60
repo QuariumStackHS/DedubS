@@ -1,7 +1,0 @@
-SIG_IGN);
-#endif
-}
-
-Server::~Server() {}
-
-Server &Server::Get(co

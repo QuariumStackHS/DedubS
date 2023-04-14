@@ -1,9 +1,0 @@
-onse &res) {
-  std::array<char, 2048> buf{};
-
-  detail::stream_line_reader line_reader(strm, buf.data(), buf.size());
-
-  if (!line_reader.getline()) { return false; }
-
-#ifdef CPPHTTPLIB_ALLOW_LF_AS_LINE_TERMINATOR
-  const static std::regex re("(HTTP/1\\.[0

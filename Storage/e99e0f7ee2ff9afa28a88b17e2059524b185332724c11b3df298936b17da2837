@@ -1,2 +1,0 @@
-                Error &error) {
-  auto is_shutting_down = []() {

@@ -1,2 +1,0 @@
-(reinterpret_cast<struct sockaddr_in6 *>(&addr)->sin6_port);
-   

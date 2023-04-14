@@ -1,2 +1,0 @@
-B_SUPPORT
-      decompressor = detail::make_unique<gzip_decompre

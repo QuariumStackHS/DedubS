@@ -1,4 +1,0 @@
-ont/woff";
-  case "woff2"_t: return "font/woff2";
-
-  case "7z"_t

@@ -1,8 +1,0 @@
-sl() && !proxy_host_.empty() && proxy_port_ != -1) {
-    auto req2 = req;
-    req2.path = "http://" + host_and_port_ + req.path;
-    ret = process_request(strm, req2, res, close_connection, error);
-    req = req2;
-    req.path = req_save.path;
-  } else {
-  

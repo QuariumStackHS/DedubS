@@ -1,2 +1,0 @@
-entImpl::set_proxy_digest_auth(const std::string &username,
-    

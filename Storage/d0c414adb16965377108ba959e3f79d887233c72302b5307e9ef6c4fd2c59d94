@@ -1,4 +1,0 @@
- ret);
-      int n = 1000;
-#ifdef _WIN32
-      while (--n >= 0 &

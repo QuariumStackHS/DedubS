@@ -1,4 +1,0 @@
-}
-
-void Response::set_content(const std::string &s,
-            

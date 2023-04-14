@@ -1,2 +1,0 @@
-    : host_(host), port_(port),
-      host_and_port_(adjust_host

@@ -1,6 +1,0 @@
- return false; }
-
-  Request req;
-  Response res;
-
-  res.version 

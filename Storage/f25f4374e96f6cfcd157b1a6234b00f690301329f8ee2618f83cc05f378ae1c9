@@ -1,9 +1,0 @@
-                             client_key_path);
-      is_ssl_ = is_ssl;
-#endif
-    } else {
-      cli_ = detail::make_unique<ClientImpl>(host, port, client_cert_path,
-                                             client_key_path);
-    }
-  } else {
-    cli_ =

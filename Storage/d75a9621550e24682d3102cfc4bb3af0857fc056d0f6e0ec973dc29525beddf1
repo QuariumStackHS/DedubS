@@ -1,4 +1,0 @@
-nd);
-  auto size = fs.tellg();
-  fs.seekg(0);
-  out.resize(stati

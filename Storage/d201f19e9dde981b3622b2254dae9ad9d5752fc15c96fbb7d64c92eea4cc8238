@@ -1,9 +1,0 @@
-
-
-bool Server::dispatch_request(Request &req, Response &res,
-                                     const Handlers &handlers) {
-  for (const auto &x : handlers) {
-    const auto &pattern = x.first;
-    const auto &handler = x.second;
-
-    if (std::regex_matc

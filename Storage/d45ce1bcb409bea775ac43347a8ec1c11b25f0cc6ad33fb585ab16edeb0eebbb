@@ -1,2 +1,0 @@
-content_provider(
-    size_t in_length, const std::string &conte

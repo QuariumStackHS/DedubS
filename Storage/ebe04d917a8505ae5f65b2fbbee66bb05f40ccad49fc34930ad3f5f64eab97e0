@@ -1,3 +1,0 @@
-:sun_path)) return INVALID_SOCKET;
-
-    auto sock = socket(hints

@@ -1,4 +1,0 @@
-; });
-#else
-#ifndef _WIN32
-  if (sock >= FD_SETSIZE) { return 1;

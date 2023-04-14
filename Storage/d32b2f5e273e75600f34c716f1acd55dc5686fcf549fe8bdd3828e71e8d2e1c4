@@ -1,2 +1,0 @@
- "Content-Length")) {
-          ret = read_content_without_lengt

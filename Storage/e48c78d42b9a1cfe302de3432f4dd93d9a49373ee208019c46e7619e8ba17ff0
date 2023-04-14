@@ -1,8 +1,0 @@
-t_auth_password_ = password;
-}
-#endif
-
-#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
-void ClientImpl::set_ca_cert_path(const std::string &ca_cert_file_path,
-                                         const std::string &ca_cert_dir_path) {
-  ca_cert_file_path_ = ca_cert_

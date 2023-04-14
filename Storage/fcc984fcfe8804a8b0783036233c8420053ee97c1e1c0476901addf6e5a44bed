@@ -1,2 +1,0 @@
-LIB_OPENSSL_SUPPORT
-void Client::set_ca_cert_path(const std::str

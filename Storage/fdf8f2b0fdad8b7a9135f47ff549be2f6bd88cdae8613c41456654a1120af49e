@@ -1,4 +1,0 @@
-, 8,
-                           Z_DEFAULT_STRATEGY) == Z_OK;
-}
-

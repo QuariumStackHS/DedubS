@@ -1,4 +1,0 @@
-rn static_cast<size_t>(std::distance(r.first, r.second));
-}
-
-// 

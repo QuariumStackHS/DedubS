@@ -1,9 +1,0 @@
-:get_header_value(headers, key, id, "");
-}
-
-size_t Response::get_header_value_count(const std::string &key) const {
-  auto r = headers.equal_range(key);
-  return static_cast<size_t>(std::distance(r.first, r.second));
-}
-
-void Response::set_header(const std::

@@ -1,3 +1,0 @@
-et_min_proto_version(ctx_, TLS1_1_VERSION);
-
-    if (SSL_CTX_use

@@ -1,3 +1,0 @@
-ze_t i = 0; i < n; i++) {
-      buf_[buf_epos_ + i] = data[i];
- 

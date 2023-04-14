@@ -1,2 +1,0 @@
-<char>(0x80 | ((code >> 6) & 0x3F));
-    buff[3] = static_cast<c

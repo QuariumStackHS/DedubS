@@ -1,2 +1,0 @@
-(!detail::is_multipart_boundary_chars_valid(boundary)) {
-    ret

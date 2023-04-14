@@ -1,2 +1,0 @@
-nse implementation
-bool Response::has_header(const std::string &

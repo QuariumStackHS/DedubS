@@ -1,7 +1,0 @@
-                                  SToken stoken, CToken ctoken,
-                                   Content content) {
-  for (size_t i = 0; i < req.ranges.size(); i++) {
-    ctoken("--");
-    stoken(boundary);
-    ctoken("\r\n");
-    if (!content_type.empty(

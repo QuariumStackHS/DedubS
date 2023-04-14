@@ -1,2 +1,0 @@
-xt_port == port_) {
-    return detail::redirect(*this, req, res,

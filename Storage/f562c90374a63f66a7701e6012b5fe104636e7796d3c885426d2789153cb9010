@@ -1,7 +1,0 @@
-dy.empty() || res.content_length_ > 0 || res.content_provider_)) {
-    res.set_header("Content-Type", "text/plain");
-  }
-
-  if (!res.has_header("Content-Length") && res.body.empty() &&
-      !res.content_length_ && !res.content_provider_) {
-    res.set_head

@@ -1,5 +1,0 @@
-d.c_str(); }
-  return def;
-}
-
-bool compare_case_ignore(const std

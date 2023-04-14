@@ -1,2 +1,0 @@
-, std::string &ip, int &port) {
-  if (addr.ss_family == AF_INET)

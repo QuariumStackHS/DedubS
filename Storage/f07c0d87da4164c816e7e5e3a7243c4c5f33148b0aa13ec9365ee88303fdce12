@@ -1,4 +1,0 @@
-d::string &s) {
-  return message_digest(s, EVP_sha512());
-}
-#end

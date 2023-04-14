@@ -1,3 +1,0 @@
- cli_->send(req); }
-
-size_t Client::is_socket_open() const { ret

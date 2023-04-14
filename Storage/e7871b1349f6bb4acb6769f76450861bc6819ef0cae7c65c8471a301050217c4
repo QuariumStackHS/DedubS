@@ -1,2 +1,0 @@
-                           DataSink &sink) mutable -> bool {
-   

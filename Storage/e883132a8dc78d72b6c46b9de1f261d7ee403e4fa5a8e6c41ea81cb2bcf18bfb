@@ -1,3 +1,0 @@
-exceeded FD_SETSIZE...
-  if (strm.socket() >= FD_SETSIZE) {
-    

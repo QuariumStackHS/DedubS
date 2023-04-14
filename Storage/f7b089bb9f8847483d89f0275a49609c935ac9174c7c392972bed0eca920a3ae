@@ -1,4 +1,0 @@
-;
-  struct addrinfo *result;
-
-  memset(&hints, 0, sizeof(struct 

@@ -1,4 +1,0 @@
-(strm_));
-  strm_.zalloc = Z_NULL;
-  strm_.zfree = Z_NULL;
-  str

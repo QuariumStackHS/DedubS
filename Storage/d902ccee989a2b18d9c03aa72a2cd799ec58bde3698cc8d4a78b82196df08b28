@@ -1,4 +1,0 @@
-s = false;
-  while (true) {
-    res = fn();
-    if (res < 0 && e

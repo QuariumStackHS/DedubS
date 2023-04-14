@@ -1,9 +1,0 @@
-  return -1;
-}
-
-void SSLSocketStream::get_remote_ip_and_port(std::string &ip,
-                                                    int &port) const {
-  detail::get_remote_ip_and_port(sock_, ip, port);
-}
-
-void SSLSocketStream::get_local_ip_and_port(std::strin

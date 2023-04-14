@@ -1,2 +1,0 @@
-(type) {
-        case GEN_DNS: dsn_matched = check_host_name(nam

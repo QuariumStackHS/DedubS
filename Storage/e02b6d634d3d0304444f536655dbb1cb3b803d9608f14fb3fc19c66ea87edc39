@@ -1,4 +1,0 @@
-ypename T>
-bool
-write_content_without_length(Stream &strm,
-     

@@ -1,8 +1,0 @@
-onst char *data, size_t data_len) {
-                                 req.body.append(data, data_len);
-                                 return true;
-                               })) {
-        error = Error::Compression;
-        return nullptr;
-      }
-   

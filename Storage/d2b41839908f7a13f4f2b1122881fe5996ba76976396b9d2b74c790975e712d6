@@ -1,6 +1,0 @@
- int port) {
-  proxy_host_ = host;
-  proxy_port_ = port;
-}
-
-void

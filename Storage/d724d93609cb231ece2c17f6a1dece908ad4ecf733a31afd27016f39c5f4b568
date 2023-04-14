@@ -1,2 +1,0 @@
-t exceed the limit
-  if (line_reader.size() > CPPHTTPLIB_REQUEST

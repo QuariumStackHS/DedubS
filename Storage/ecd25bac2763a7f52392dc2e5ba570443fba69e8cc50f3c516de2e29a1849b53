@@ -1,8 +1,0 @@
-x_);
-    socket_requests_in_flight_ -= 1;
-    if (socket_requests_in_flight_ <= 0) {
-      assert(socket_requests_in_flight_ == 0);
-      socket_requests_are_from_thread_ = std::thread::id();
-    }
-
-    if (socket_should_be_closed_when_request_is_done_ || c

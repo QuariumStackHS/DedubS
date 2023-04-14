@@ -1,2 +1,0 @@
-trim(const char *b, const char *e, size_t left,
-                

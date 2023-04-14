@@ -1,4 +1,0 @@
-;
-  if (len < 0) { return len; }
-  write_len += len;
-  return wr

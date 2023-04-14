@@ -1,3 +1,0 @@
-
-std::string append_query_params(const std::string &path,
-      

@@ -1,3 +1,0 @@
-ctx_; }
-
-bool SSLServer::process_and_close_socket(socket_t sock)

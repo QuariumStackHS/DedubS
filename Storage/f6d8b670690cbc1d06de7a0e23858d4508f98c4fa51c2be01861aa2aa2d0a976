@@ -1,6 +1,0 @@
-fa->ifa_next) {
-    if (ifa->ifa_addr && ifn == ifa->ifa_name &&
-        (AF_UNSPEC == address_family ||
-         ifa->ifa_addr->sa_family == address_family)) {
-      if (ifa->ifa_addr->sa_family == AF_INET) {
-        auto sa = reinterpret_cast<struct socka

@@ -1,4 +1,0 @@
-)) {
-    if (!strm.is_writable()) {
-      return false;
-    } el

@@ -1,3 +1,0 @@
-(content_provider), content_type);
-}
-Result Client::Post(const s

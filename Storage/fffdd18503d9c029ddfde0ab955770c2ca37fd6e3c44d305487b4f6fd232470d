@@ -1,9 +1,0 @@
-::set_hostname_addr_map(std::map<std::string, std::string> addr_map) {
-  addr_map_ = std::move(addr_map);
-}
-
-void ClientImpl::set_default_headers(Headers headers) {
-  default_headers_ = std::move(headers);
-}
-
-void ClientImpl::set_address_family(int family) 

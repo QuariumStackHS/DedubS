@@ -1,3 +1,0 @@
-1]) (\\d{3})(?: (.*?))?\r\n");
-#else
-  const static std::regex re("(HTTP/1\\.[01]) (\\d{3})(

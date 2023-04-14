@@ -1,2 +1,0 @@
-  return dispatch_request(req, res, options_handlers_);
-  } else

@@ -1,2 +1,0 @@
-o host = m[2].str();
-    if (host.empty()) { host = m[3].str(); 

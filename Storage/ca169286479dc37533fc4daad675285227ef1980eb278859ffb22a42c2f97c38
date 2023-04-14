@@ -1,3 +1,0 @@
-Error &error) {
-  size_t offset = 0;
-  auto data_available = tru

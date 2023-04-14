@@ -1,6 +1,0 @@
-ffset += l;
-      } else {
-        ok = false;
-      }
-    }
-   

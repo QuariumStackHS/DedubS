@@ -1,2 +1,0 @@
-lient(const std::string &host)
-    : SSLClient(host, 443, std::s

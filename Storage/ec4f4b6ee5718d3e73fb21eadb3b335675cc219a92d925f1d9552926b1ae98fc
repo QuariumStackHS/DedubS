@@ -1,3 +1,0 @@
- (it != end) {
-    out += static_cast<char>(::tolower(*it));
-   

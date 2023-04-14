@@ -1,6 +1,0 @@
-;
-  }
-  return ret;
-}
-
-bool ClientImpl::send_(Request &req, Resp

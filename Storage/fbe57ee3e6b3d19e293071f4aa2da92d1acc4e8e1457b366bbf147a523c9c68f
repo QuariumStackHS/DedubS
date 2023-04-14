@@ -1,3 +1,0 @@
-  ret = false;
-      }
-    } else if (!ca_cert_dir_path_.empty()

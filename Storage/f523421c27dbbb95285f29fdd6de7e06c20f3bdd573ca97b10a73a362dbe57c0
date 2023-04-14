@@ -1,6 +1,0 @@
-return true;
-  }
-  return false;
-}
-
-bool from_hex_to_i(const std

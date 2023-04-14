@@ -1,2 +1,0 @@
-t(socket_t sock, std::string &ip, int &port) {
-  struct sockaddr

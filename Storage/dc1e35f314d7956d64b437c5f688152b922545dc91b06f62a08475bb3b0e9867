@@ -1,8 +1,0 @@
-r wait_until_socket_is_ready(socket_t sock, time_t sec,
-                                        time_t usec) {
-#ifdef CPPHTTPLIB_USE_POLL
-  struct pollfd pfd_read;
-  pfd_read.fd = sock;
-  pfd_read.events = POLLIN | POLLOUT;
-
-  auto timeout = static_cast<int

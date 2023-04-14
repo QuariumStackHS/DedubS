@@ -1,9 +1,0 @@
-::to_string(res.body.size());
-    res.set_header("Content-Length", length);
-  }
-}
-
-bool Server::dispatch_request_for_content_reader(
-    Request &req, Response &res, ContentReader content_reader,
-    const HandlersForContentReader &handlers) {
-  for (const 

@@ -1,3 +1,0 @@
-nt::get_openssl_verify_result() const {
-  if (is_ssl_) {
-    ret

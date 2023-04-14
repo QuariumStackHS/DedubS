@@ -1,6 +1,0 @@
-)) {
-      freeaddrinfo(result);
-      return sock;
-    }
-
-    c

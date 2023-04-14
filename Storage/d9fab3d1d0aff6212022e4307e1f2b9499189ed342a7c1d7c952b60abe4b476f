@@ -1,5 +1,0 @@
-pre_routing_handler_ = std::move(handler);
-  return *this;
-}
-
-Se

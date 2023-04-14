@@ -1,2 +1,0 @@
-ty() &&
-      !res.content_length_ && !res.content_provider_) {

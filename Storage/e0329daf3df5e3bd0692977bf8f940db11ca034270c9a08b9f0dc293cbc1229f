@@ -1,6 +1,0 @@
-();
-#endif
-    return INVALID_SOCKET;
-  }
-
-  for (auto rp = resu

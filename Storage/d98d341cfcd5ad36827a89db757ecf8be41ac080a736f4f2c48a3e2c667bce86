@@ -1,5 +1,0 @@
-nt_socket(Error &error) const {
-  if (!proxy_host_.empty() && proxy_port_ != -1) {
-    return detail::create_client_socket(
-        proxy_host_, std::string(), proxy_port_, address_family_, tcp_nodelay_,
-        socket_options_, connection_timeout_sec_, co

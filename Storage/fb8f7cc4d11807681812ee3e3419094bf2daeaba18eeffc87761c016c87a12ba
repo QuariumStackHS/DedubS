@@ -1,8 +1,0 @@
-n false; }
-
-  while (strcmp(line_reader.ptr(), "\r\n")) {
-    if (line_reader.size() > CPPHTTPLIB_HEADER_MAX_LENGTH) { return false; }
-
-    // Exclude line terminator
-    constexpr auto line_terminator_len = 2;
-    auto end = line_reader.ptr() + line_reade

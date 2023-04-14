@@ -1,8 +1,0 @@
- (!available_in) { break; }
-    }
-
-    auto available_out = buff.size();
-    auto next_out = buff.data();
-
-    if (!BrotliEncoderCompressStream(state_, operation, &available_in, &next_in,
-                                     &available_out, &next_out, nullp

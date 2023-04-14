@@ -1,1 +1,0 @@
-sult ClientImpl::Delete(const std::string &path, const char *bod

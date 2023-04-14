@@ -1,2 +1,0 @@
-                 size_t id) const {
-  return detail::get_header_

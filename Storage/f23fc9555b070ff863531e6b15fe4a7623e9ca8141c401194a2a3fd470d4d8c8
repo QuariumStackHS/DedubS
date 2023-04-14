@@ -1,6 +1,0 @@
-password_.empty()) {
-      std::map<std::string, std::string> auth;
-      if (detail::parse_www_authenticate(res2, auth, true)) {
-        Response res3;
-        if (!detail::process_client_socket(
-                socket.sock, read_timeout_sec_, read_timeout

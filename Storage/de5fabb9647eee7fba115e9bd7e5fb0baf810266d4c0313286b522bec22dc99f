@@ -1,2 +1,0 @@
- (req.method == "PUT") {
-        if (dispatch_request_for_conten

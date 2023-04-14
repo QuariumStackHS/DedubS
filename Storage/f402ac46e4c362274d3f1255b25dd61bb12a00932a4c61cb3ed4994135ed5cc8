@@ -1,3 +1,0 @@
- = rhs.keep_alive_;
-  follow_location_ = rhs.follow_location_;
- 

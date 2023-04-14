@@ -1,6 +1,0 @@
-_NO_PEER_CERT, nullptr);
-    }
-  }
-}
-
-SSLServer::SSLServer(X509 

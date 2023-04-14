@@ -1,2 +1,0 @@
-c)>(write_timeout_usec);
-          setsockopt(sock2, SOL_SOCKET,

@@ -1,2 +1,0 @@
-(crlf_);
-        if (pos > CPPHTTPLIB_HEADER_MAX_LENGTH) { retur

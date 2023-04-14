@@ -1,9 +1,0 @@
- detail::make_unique<ClientImpl>(scheme_host_port, 80,
-                                           client_cert_path, client_key_path);
-  }
-}
-
-Client::Client(const std::string &host, int port)
-    : cli_(detail::make_unique<ClientImpl>(host, port)) {}
-
-Clien

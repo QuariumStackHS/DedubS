@@ -1,3 +1,0 @@
-TPUT) {
-    char *next_out = buff.data();
-    size_t avail_out =

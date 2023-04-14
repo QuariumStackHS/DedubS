@@ -1,2 +1,0 @@
-      detail::status_message(res.status))) {
-      return false;

@@ -1,2 +1,0 @@
-      auto beg = std::sregex_iterator(s.begin(), s.end(), re);
- 

@@ -1,9 +1,0 @@
-e_t>((std::numeric_limits<int>::max)()));
-#endif
-
-  return send_socket(sock_, ptr, size, CPPHTTPLIB_SEND_FLAGS);
-}
-
-void SocketStream::get_remote_ip_and_port(std::string &ip,
-                                                 int &port) const {
-  return deta

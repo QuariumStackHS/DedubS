@@ -1,9 +1,0 @@
-trim(const char *b, const char *e, size_t left,
-                                      size_t right) {
-  while (b + left < e && is_space_or_tab(b[left])) {
-    left++;
-  }
-  while (right > 0 && is_space_or_tab(b[right - 1])) {
-    right--;
-  }
-  return std:

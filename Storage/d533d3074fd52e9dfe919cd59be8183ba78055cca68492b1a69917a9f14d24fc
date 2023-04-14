@@ -1,1 +1,0 @@
-  const auto &content_type = req.get_header_value("Content-Type"

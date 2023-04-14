@@ -1,7 +1,0 @@
-res3, false, error);
-                })) {
-          // Thread-safe to close everything because we are assuming there are
-          // no requests in flight
-          shutdown_ssl(socket, true);
-          shutdown_socket(socket);
-          close_socket(sock

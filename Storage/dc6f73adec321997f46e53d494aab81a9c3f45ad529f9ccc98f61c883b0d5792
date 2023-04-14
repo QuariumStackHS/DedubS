@@ -1,7 +1,0 @@
-          const std::string &content_type) {
-  return Patch(path, Headers(), body, content_type);
-}
-
-Result ClientImpl::Patch(const std::string &path, const Headers &headers,
-                                const std::string &body,
-                        

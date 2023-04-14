@@ -1,9 +1,0 @@
-      client_cert_path_(client_cert_path), client_key_path_(client_key_path) {}
-
-ClientImpl::~ClientImpl() {
-  std::lock_guard<std::mutex> guard(socket_mutex_);
-  shutdown_socket(socket_);
-  close_socket(socket_);
-}
-
-bool ClientImpl::is_valid() const { retu

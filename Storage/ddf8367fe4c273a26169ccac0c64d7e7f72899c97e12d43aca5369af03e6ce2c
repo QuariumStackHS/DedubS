@@ -1,4 +1,0 @@
-PROV_LEGACY)NULL, L"ROOT");
-  if (!hStore) { return false; }
-
-  

@@ -1,2 +1,0 @@
-  case 412: return "Precondition Failed";
-  case 413: return "Pa

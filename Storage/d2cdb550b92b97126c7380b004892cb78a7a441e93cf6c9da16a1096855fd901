@@ -1,8 +1,0 @@
-e_path,
-                                     const std::string &ca_cert_dir_path) {
-  cli_->set_ca_cert_path(ca_cert_file_path, ca_cert_dir_path);
-}
-
-void Client::set_ca_cert_store(X509_STORE *ca_cert_store) {
-  if (is_ssl_) {
-    static_cast<SSLClient &>(*

@@ -1,9 +1,0 @@
-td::string &hostname) {
-  std::vector<std::string> addrs;
-  hosted_at(hostname, addrs);
-  if (addrs.empty()) { return std::string(); }
-  return addrs[0];
-}
-
-void hosted_at(const std::string &hostname,
-                      std::vector<std::string> &addrs) 

@@ -1,2 +1,0 @@
-    auto success = false;
-          if (!scli.connect_with_proxy

@@ -1,3 +1,0 @@
-TE" && !req.has_header("Content-Length")) {
-    return true;
-  }

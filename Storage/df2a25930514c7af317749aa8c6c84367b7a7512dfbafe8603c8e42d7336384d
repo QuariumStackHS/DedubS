@@ -1,6 +1,0 @@
-min_proto_version(ctx_, TLS1_1_VERSION);
-
-    // add default password callback before opening encrypted private key
-    if (private_key_password != nullptr && (private_key_password[0] != '\0')) {
-      SSL_CTX_set_default_passwd_cb_userdata(ctx_,
-          

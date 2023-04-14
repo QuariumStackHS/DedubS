@@ -1,2 +1,0 @@
-cheme_host_port)
-    : Client(scheme_host_port, std::string(), s

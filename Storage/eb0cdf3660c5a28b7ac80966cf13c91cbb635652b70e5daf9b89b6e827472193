@@ -1,2 +1,0 @@
-sec, time_t connection_timeout_usec,
-    time_t read_timeout_sec

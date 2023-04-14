@@ -1,3 +1,0 @@
-set_cert_store(ctx_, client_ca_cert_store);
-
-      SSL_CTX_set_v

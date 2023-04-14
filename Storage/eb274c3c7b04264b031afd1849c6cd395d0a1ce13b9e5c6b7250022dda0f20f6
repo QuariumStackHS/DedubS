@@ -1,2 +1,0 @@
- if (r.second == -1) {
-    r.second = static_cast<ssize_t>(res.c

@@ -1,2 +1,0 @@
-            if (!ret) { error = Error::Canceled; }
-             

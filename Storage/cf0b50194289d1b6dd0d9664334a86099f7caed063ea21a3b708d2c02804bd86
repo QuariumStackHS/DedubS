@@ -1,3 +1,0 @@
-      bool decompress) {
-  return prepare_content_receiver(
-    

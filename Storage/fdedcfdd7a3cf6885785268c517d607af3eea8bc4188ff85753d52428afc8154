@@ -1,2 +1,0 @@
- case 410: return "Gone";
-  case 411: return "Length Required";

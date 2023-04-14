@@ -1,7 +1,0 @@
-FormDataItems &items) {
-  return Post(path, Headers(), items);
-}
-
-Result ClientImpl::Post(const std::string &path, const Headers &headers,
-                               const MultipartFormDataItems &items) {
-  const auto &boundary = detail::make_multipart_

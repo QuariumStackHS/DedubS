@@ -1,2 +1,0 @@
-range(key);
-  return static_cast<size_t>(std::distance(r.first, 

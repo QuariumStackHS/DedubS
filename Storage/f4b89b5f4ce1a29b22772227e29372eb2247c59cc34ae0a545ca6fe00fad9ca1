@@ -1,3 +1,0 @@
- detail::shutdown_socket(sock);
-  detail::close_socket(sock);
-  

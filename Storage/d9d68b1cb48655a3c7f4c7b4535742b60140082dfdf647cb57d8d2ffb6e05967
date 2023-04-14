@@ -1,2 +1,0 @@
-lgo, nullptr);
-  EVP_DigestUpdate(context.get(), s.c_str(), s.si

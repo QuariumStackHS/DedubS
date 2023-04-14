@@ -1,2 +1,0 @@
- static_cast<int>(handle_size));
-          if (ret >= 0) { retur

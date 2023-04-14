@@ -1,9 +1,0 @@
-ast<char>(0xF0 | ((code >> 18) & 0x7));
-    buff[1] = static_cast<char>(0x80 | ((code >> 12) & 0x3F));
-    buff[2] = static_cast<char>(0x80 | ((code >> 6) & 0x3F));
-    buff[3] = static_cast<char>(0x80 | (code & 0x3F));
-    return 4;
-  }
-
-  // NOTREACHED
- 

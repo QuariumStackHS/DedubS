@@ -1,2 +1,0 @@
-r_token_auth(const std::string &token) {
-  proxy_bearer_token_au

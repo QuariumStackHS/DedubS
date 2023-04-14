@@ -1,3 +1,0 @@
-;
-    } else if (cur_item < provider_items.size()) {
-      if (!

@@ -1,3 +1,0 @@
-#ifndef _WIN32
-  if (hints.ai_family == AF_UNIX) {
-    const aut

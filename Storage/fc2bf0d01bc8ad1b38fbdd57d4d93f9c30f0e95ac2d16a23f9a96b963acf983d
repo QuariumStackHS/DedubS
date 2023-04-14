@@ -1,4 +1,0 @@
-nting
-  bool routed = false;
-#ifdef CPPHTTPLIB_NO_EXCEPTIONS
-  r

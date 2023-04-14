@@ -1,3 +1,0 @@
-_CTX_set_min_proto_version(ctx_, TLS1_1_VERSION);
-
-    // add de

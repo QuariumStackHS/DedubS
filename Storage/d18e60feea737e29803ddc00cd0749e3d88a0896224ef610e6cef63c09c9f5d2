@@ -1,2 +1,0 @@
-   if (error != Error::Canceled) { error = Error::Read; }
-      

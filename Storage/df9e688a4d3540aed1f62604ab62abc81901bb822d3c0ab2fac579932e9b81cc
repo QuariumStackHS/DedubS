@@ -1,4 +1,0 @@
-ful ? Error::Success : Error::Connection;
-  }
-
-  return Error::C

@@ -1,4 +1,0 @@
-
-
-bool Client::is_valid() const {
-  return cli_ != nullptr && cl

@@ -1,6 +1,0 @@
-                       ContentProvider content_provider,
-                           const std::string &content_type) {
-  return cli_->Post(path, content_length, std::move(content_provider),
-                    content_type);
-}
-Result Client::Post(const std

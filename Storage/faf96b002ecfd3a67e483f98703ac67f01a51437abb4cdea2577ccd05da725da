@@ -1,2 +1,0 @@
-er_.push_back(
-      std::make_pair(std::regex(pattern), std::mo

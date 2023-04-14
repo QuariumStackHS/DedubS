@@ -1,3 +1,0 @@
- const { return true; }
-
-bool SSLClient::verify_host(X509 *serve

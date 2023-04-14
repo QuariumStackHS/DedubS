@@ -1,3 +1,0 @@
-yload Too Large";
-  case 414: return "URI Too Long";
-  case 415:

@@ -1,7 +1,0 @@
-    auto remaining_size = read_buff_content_size_ - read_buff_off_;
-    if (size <= remaining_size) {
-      memcpy(ptr, read_buff_.data() + read_buff_off_, size);
-      read_buff_off_ += size;
-      return static_cast<ssize_t>(size);
-    } else {
-      mem

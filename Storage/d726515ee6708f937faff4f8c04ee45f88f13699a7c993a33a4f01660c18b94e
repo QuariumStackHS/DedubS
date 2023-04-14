@@ -1,3 +1,0 @@
- while (--n >= 0 && err == SSL_ERROR_WANT_WRITE) {
-#endif
-      

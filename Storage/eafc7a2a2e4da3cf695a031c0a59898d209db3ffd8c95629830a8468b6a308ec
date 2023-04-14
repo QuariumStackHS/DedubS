@@ -1,6 +1,0 @@
-   content_length, std::move(content_provider),
-                                    nullptr, content_type);
-}
-
-Result ClientImpl::Put(const std::string &path, const Headers &headers,
-                              ContentProviderWithoutLength content_provide

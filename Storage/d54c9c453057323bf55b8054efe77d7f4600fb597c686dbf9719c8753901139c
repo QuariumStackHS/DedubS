@@ -1,2 +1,0 @@
-ad(ssl_, ptr, static_cast<int>(size));
-          if (ret >= 0) {

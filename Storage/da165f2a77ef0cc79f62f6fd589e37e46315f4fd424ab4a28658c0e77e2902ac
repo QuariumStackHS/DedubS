@@ -1,7 +1,0 @@
-oid SIGPIPE if we know
-  // the remote has closed the network connection
-  // Note that it is not always possible to avoid SIGPIPE, this is merely a
-  // best-efforts.
-  if (shutdown_gracefully) { SSL_shutdown(ssl); }
-
-  std::lock_guard<std::mutex> guard(ct

@@ -1,5 +1,0 @@
-thod());
-
-  if (ctx_) {
-    SSL_CTX_set_options(ctx_,
-          

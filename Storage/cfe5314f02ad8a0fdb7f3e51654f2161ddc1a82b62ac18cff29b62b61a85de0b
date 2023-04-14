@@ -1,3 +1,0 @@
-ock_guard<std::mutex> guard(ctx_mutex);
-        SSL_free(ssl);
- 

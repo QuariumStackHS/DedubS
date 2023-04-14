@@ -1,2 +1,0 @@
-set_verify(
-          ctx_, SSL_VERIFY_PEER | SSL_VERIFY_FAIL_IF

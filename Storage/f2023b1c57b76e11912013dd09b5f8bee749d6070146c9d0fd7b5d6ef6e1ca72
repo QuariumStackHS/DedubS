@@ -1,5 +1,0 @@
-items) {
-  return Post(path, Headers(), items);
-}
-
-Result Client

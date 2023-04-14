@@ -1,2 +1,0 @@
-: req.path;
-    bstrm.write_format("%s %s HTTP/1.1\r\n", req.met

@@ -1,8 +1,0 @@
- SSLClient::shutdown_ssl_impl(Socket &socket,
-                                         bool shutdown_gracefully) {
-  if (socket.sock == INVALID_SOCKET) {
-    assert(socket.ssl == nullptr);
-    return;
-  }
-  if (socket.ssl) {
-    detail::ssl_delete(ctx_mutex

@@ -1,3 +1,0 @@
-rotli_decompressor::is_valid() const { return decoder_s; }
-
-bool

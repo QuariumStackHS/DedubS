@@ -1,2 +1,0 @@
-0xF));
-    buff[1] = static_cast<char>(0x80 | ((code >> 6) & 0x3

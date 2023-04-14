@@ -1,3 +1,0 @@
-   detail::gzip_compressor compressor;
-
-    if (content_provider

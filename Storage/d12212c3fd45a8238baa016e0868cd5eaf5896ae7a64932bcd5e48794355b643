@@ -1,4 +1,0 @@
-..
-    case ';': result += "%3B"; break;
-    default:
-      auto

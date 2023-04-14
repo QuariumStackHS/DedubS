@@ -1,3 +1,0 @@
-_length, content_type);
-}
-Result Client::Patch(const std::string

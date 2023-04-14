@@ -1,3 +1,0 @@
-headers) {
-    auto len =
-        strm.write_format("%s: %s\r\n"

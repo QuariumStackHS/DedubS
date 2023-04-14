@@ -1,7 +1,0 @@
-il::serialize_multipart_formdata(items, boundary);
-  return Post(path, headers, body, content_type.c_str());
-}
-
-Result ClientImpl::Post(const std::string &path, const Headers &headers,
-                               const MultipartFormDataItems &items,
-   

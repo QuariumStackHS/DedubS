@@ -1,2 +1,0 @@
- fs(path, std::ios_base::binary);
-  fs.seekg(0, std::ios_base::e

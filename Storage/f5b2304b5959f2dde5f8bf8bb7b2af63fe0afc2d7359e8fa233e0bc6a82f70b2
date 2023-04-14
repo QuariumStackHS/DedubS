@@ -1,3 +1,0 @@
-or() == WSAETIMEDOUT))) {
-#else
-      while (--n >= 0 && err == 

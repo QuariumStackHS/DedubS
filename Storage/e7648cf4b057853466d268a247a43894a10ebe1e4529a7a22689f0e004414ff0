@@ -1,2 +1,0 @@
-f (!req.has_header("Authorization")) {
-      req.headers.insert(

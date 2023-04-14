@@ -1,6 +1,0 @@
-path, const Headers &headers,
-                          ContentProviderWithoutLength content_provider,
-                          const std::string &content_type) {
-  return cli_->Put(path, headers, std::move(content_provider), content_type);
-}
-Result Client

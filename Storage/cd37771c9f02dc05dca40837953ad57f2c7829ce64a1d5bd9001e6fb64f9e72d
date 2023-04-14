@@ -1,8 +1,0 @@
-Handler response_handler,
-                              ContentReceiver content_receiver,
-                              Progress progress) {
-  Request req;
-  req.method = "GET";
-  req.path = path;
-  req.headers = headers;
-  req.response_handler = std::move

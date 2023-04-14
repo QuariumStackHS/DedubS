@@ -1,2 +1,0 @@
-    : new_task_queue(
-          [] { return new ThreadPool(CPPHT

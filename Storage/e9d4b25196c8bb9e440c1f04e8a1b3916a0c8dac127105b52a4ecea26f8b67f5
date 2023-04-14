@@ -1,7 +1,0 @@
-ffer_used_size_ < fixed_buffer_size_ - 1) {
-    fixed_buffer_[fixed_buffer_used_size_++] = c;
-    fixed_buffer_[fixed_buffer_used_size_] = '\0';
-  } else {
-    if (glowable_buffer_.empty()) {
-      assert(fixed_buffer_[fixed_buffer_used_size_] == '\0');
-   

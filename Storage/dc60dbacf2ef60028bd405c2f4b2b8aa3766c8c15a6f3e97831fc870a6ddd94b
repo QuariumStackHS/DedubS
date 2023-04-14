@@ -1,3 +1,0 @@
-return 3;
-  } else if (code < 0x110000) {
-    buff[0] = static_c

@@ -1,3 +1,0 @@
-auth_password_ = rhs.digest_auth_password_;
-#endif
-  keep_alive_

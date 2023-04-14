@@ -1,8 +1,0 @@
- {
-      if (SSL_CTX_get_cert_store(ctx_) != ca_cert_store) {
-        // Free memory allocated for old cert and use new store `ca_cert_store`
-        SSL_CTX_set_cert_store(ctx_, ca_cert_store);
-      }
-    } else {
-      X509_STORE_free(ca_cert_store);
-  

@@ -1,2 +1,0 @@
-for (const auto &x : handlers) {
-    const auto &pattern = x.fir

@@ -1,5 +1,0 @@
- sink);
-  }
-
-private:
-  ContentProviderWithoutLength content_pro

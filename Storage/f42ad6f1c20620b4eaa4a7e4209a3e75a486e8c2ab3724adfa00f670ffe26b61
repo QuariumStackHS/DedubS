@@ -1,3 +1,0 @@
-eam &strm)> callback) {
-  assert(socket.ssl);
-  return detail::p

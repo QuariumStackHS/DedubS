@@ -1,3 +1,0 @@
-                     Error &error) {
-  Request new_req = req;
-  

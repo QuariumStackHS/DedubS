@@ -1,6 +1,0 @@
-Server::process_and_close_socket(socket_t sock) {
-  auto ssl = detail::ssl_new(
-      sock, ctx_, ctx_mutex_,
-      [&](SSL *ssl2) {
-        return detail::ssl_connect_or_accept_nonblocking(
-            sock, ssl2, SSL_accept, read_timeout_sec_, read_timeou

@@ -1,2 +1,0 @@
-bjectPtr =
-    std::unique_ptr<typename std::remove_pointer<T>::

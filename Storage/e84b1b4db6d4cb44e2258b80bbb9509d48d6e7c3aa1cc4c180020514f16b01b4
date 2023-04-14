@@ -1,4 +1,0 @@
-ept(ssl) != 1) {
-      SSL_shutdown(ssl);
-      {
-        std::l

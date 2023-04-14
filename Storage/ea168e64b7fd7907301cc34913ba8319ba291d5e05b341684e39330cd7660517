@@ -1,3 +1,0 @@
- = res.get_header_value(auth_key);
-    auto pos = s.find(' ');
- 

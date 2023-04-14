@@ -1,8 +1,0 @@
-d::string &pattern, Handler handler) {
-  patch_handlers_.push_back(
-      std::make_pair(std::regex(pattern), std::move(handler)));
-  return *this;
-}
-
-Server &Server::Patch(const std::string &pattern,
-                             HandlerWithContentReader h

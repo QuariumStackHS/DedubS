@@ -1,8 +1,0 @@
-f (ctx_) {
-    SSL_CTX_set_options(ctx_,
-                        SSL_OP_NO_COMPRESSION |
-                            SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION);
-
-    SSL_CTX_set_min_proto_version(ctx_, TLS1_1_VERSION);
-
-    if (SSL_CTX_use_certificate(c

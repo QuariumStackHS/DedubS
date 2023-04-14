@@ -1,2 +1,0 @@
-onse_handler && !redirect) {
-      if (!req.response_handler(res

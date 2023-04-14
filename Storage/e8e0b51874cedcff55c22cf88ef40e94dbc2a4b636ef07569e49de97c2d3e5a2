@@ -1,6 +1,0 @@
-r(b[i])) { return false; }
-    }
-    return true;
-  }
-
-  const s

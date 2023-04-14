@@ -1,3 +1,0 @@
-
-template <typename T> ssize_t handle_EINTR(T fn) {
-  ssize_t re

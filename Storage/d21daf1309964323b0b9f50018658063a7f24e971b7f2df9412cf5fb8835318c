@@ -1,5 +1,0 @@
-socket(socket_);
-    }
-  });
-
-  ret = process_socket(socket_, [&

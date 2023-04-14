@@ -1,8 +1,0 @@
-        const std::string &password) {
-  cli_->set_proxy_basic_auth(username, password);
-}
-void Client::set_proxy_bearer_token_auth(const std::string &token) {
-  cli_->set_proxy_bearer_token_auth(token);
-}
-#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
-void Client::set_

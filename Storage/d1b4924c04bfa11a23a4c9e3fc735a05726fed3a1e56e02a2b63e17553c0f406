@@ -1,4 +1,0 @@
-c && isdigit(c)) {
-    v = c - '0';
-    return true;
-  } else if

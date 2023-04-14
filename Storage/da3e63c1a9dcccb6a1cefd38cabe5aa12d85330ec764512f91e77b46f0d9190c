@@ -1,3 +1,0 @@
-  DataSink data_sink;
-
-  data_sink.write = [&](const char *d, si

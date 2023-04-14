@@ -1,2 +1,0 @@
-nst std::string &client_key_path)
-    : cli_(detail::make_unique

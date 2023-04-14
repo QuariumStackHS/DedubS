@@ -1,5 +1,0 @@
-_family == AF_INET6) {
-        auto sa = reinterpret_cast<struct sockaddr_in6 *>(ifa->ifa_addr);
-        if (!IN6_IS_ADDR_LINKLOCAL(&sa->sin6_addr)) {
-          char buf[INET6_ADDRSTRLEN] = {};
-          if (inet_ntop(AF_INET6, &sa->sin6_addr, buf, INET6_AD

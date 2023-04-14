@@ -1,5 +1,0 @@
-n true;
-}
-
-template <typename T>
-bool process_server_socket_ssl(

@@ -1,3 +1,0 @@
-        time_t timeout_usec) {
-  int res = 0;
-  while ((res = ss

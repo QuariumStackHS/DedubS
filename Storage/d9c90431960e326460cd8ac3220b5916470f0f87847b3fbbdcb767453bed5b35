@@ -1,2 +1,0 @@
-t std::string &val) {
-  if (!detail::has_crlf(key) && !detail::h

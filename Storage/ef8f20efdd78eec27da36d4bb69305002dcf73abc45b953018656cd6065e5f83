@@ -1,3 +1,0 @@
- nullptr, &cert_data) !=
-        errSecSuccess) {
-      continue

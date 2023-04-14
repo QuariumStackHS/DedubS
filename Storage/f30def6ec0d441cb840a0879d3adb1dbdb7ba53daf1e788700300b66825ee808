@@ -1,2 +1,0 @@
-_SUPPORT
-void ClientImpl::set_ca_cert_path(const std::string &ca

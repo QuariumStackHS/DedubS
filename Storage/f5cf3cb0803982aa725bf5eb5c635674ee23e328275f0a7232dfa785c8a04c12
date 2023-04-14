@@ -1,8 +1,0 @@
-er));
-}
-Result Client::Get(const std::string &path, const Headers &headers,
-                          ContentReceiver content_receiver) {
-  return cli_->Get(path, headers, std::move(content_receiver));
-}
-Result Client::Get(const std::string &path,
-        

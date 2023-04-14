@@ -1,2 +1,0 @@
-request_for_content_reader(
-    Request &req, Response &res, Con

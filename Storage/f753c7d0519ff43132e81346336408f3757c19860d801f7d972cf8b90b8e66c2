@@ -1,3 +1,0 @@
- sockaddr_storage *>(rp->ai_addr);
-    std::string ip;
-    int d

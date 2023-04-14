@@ -1,3 +1,0 @@
-valid = true;
-  for (size_t i = 0; i < boundary.size(); i++) {
- 

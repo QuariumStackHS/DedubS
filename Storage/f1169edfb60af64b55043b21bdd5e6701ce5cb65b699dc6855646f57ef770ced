@@ -1,4 +1,0 @@
-sl, res);
-    switch (err) {
-    case SSL_ERROR_WANT_READ:
-     

@@ -1,2 +1,0 @@
-cketStream(socket_t sock, SSL *ssl, time_t read_timeout_sec,
-   

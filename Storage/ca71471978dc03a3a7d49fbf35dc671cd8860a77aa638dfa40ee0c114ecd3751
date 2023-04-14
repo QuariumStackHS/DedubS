@@ -1,3 +1,0 @@
->
-bool redirect(T &cli, Request &req, Response &res,
-           

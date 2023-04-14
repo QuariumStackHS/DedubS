@@ -1,2 +1,0 @@
-   auto c = boundary[i];
-    if (!std::isalnum(c) && c != '-' &&

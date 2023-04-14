@@ -1,6 +1,0 @@
-:string &content_type,
-                                        const T &is_shutting_down) {
-  return process_multipart_ranges_data(
-      req, res, boundary, content_type,
-      [&](const std::string &token) { strm.write(token); },
-      [&](const std::str

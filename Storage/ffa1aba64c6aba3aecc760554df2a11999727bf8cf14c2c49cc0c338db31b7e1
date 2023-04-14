@@ -1,3 +1,0 @@
-se "tiff"_t: return "image/tiff";
-  case "jpg"_t:
-  case "jpeg"_

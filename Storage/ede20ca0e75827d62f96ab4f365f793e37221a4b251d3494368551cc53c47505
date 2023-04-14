@@ -1,4 +1,0 @@
-ove(addr_map);
-}
-
-void ClientImpl::set_default_headers(Headers h

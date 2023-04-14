@@ -1,8 +1,0 @@
-ctx_, private_key) != 1) {
-      SSL_CTX_free(ctx_);
-      ctx_ = nullptr;
-    } else if (client_ca_cert_store) {
-      SSL_CTX_set_cert_store(ctx_, client_ca_cert_store);
-
-      SSL_CTX_set_verify(
-          ctx_, SSL_VERIFY_PEER | SSL_VERIFY_FAIL_IF_NO_P

@@ -1,5 +1,0 @@
-= true;
-  }
-
-  std::string content_type;
-  std::string boundary;

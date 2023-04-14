@@ -1,2 +1,0 @@
- return "Unsupported Media Type";
-  case 416: return "Range Not 

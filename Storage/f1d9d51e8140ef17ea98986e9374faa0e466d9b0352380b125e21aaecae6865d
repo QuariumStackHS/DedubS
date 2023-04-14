@@ -1,4 +1,0 @@
-(status) {
-    case 100:
-    case 417:
-      strm.write_format("

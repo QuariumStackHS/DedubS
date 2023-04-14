@@ -1,2 +1,0 @@
-q.headers.insert(make_basic_authentication_header(
-          pro

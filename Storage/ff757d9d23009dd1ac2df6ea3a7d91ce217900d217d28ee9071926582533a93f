@@ -1,3 +1,0 @@
-EC;
-  hints.ai_socktype = SOCK_STREAM;
-  hints.ai_protocol = 0;

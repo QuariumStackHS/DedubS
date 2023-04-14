@@ -1,3 +1,0 @@
-()) {
-    if (!req.has_header("Proxy-Authorization")) {
-      re

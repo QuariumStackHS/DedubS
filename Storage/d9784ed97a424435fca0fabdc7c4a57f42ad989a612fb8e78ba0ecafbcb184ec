@@ -1,3 +1,0 @@
-TPLIB_THREAD_POOL_COUNT); }) {
-#ifndef _WIN32
-  signal(SIGPIPE, 

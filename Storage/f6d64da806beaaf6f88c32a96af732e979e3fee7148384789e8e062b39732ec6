@@ -1,5 +1,0 @@
-imeout_sec, write_timeout_usec);
-  return callback(strm);
-}
-
-int

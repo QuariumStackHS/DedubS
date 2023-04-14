@@ -1,3 +1,0 @@
-ite_timeout_sec_ = sec;
-  write_timeout_usec_ = usec;
-  return *

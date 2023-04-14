@@ -1,2 +1,0 @@
-of(error);
-    auto res = getsockopt(sock, SOL_SOCKET, SO_ERROR,

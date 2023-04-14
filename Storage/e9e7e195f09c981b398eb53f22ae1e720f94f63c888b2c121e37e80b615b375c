@@ -1,6 +1,0 @@
-  ctoken("\r\n");
-  }
-
-  ctoken("--");
-  stoken(boundary);
-  cto

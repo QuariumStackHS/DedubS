@@ -1,5 +1,0 @@
-port,
-                      const std::string &client_cert_path,
-                      const std::string &client_key_path) {
-  const static std::regex re(
-      R"((?:([a-z]+):\/\/)?(?:\[([\d:]+)\]|([^:/

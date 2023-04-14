@@ -1,5 +1,0 @@
-addr6;
-  struct in_addr addr;
-  size_t addr_len = 0;
-
-#ifndef __

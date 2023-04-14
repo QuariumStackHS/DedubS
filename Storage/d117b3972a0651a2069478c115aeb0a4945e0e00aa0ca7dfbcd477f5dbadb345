@@ -1,2 +1,0 @@
-ef CPPHTTPLIB_ZLIB_SUPPORT
-        compressor = detail::make_uni

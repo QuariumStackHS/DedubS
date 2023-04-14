@@ -1,1 +1,0 @@
- return Result{ret ? std::move(res) : nullptr, error, std::move(

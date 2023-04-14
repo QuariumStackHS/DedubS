@@ -1,3 +1,0 @@
- (!load_certs()) {
-            error = Error::SSLLoadingCerts;
- 

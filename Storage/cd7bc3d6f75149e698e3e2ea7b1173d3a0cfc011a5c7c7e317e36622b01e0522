@@ -1,2 +1,0 @@
- &req, const std::map<std::string, std::string> &auth,
-    size_

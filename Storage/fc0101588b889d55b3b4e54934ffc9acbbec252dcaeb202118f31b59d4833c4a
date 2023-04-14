@@ -1,4 +1,0 @@
-:string());
-}
-
-Result ClientImpl::Delete(const std::string &path

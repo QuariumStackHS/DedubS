@@ -1,8 +1,0 @@
-,
-                               const std::string &content_type) {
-  return Post(path, Headers(), content_length, std::move(content_provider),
-              content_type);
-}
-
-Result ClientImpl::Post(const std::string &path,
-                               

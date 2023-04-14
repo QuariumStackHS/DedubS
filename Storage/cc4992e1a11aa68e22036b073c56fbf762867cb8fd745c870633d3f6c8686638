@@ -1,4 +1,0 @@
-new_req.path = path;
-  new_req.redirect_count_ -= 1;
-
-  if (res.

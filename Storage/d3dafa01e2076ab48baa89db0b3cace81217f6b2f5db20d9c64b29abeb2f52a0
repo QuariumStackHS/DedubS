@@ -1,2 +1,0 @@
-string path_with_query = path;
-  const static std::regex re("[^?

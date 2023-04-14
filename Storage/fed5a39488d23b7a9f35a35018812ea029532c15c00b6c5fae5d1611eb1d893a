@@ -1,2 +1,0 @@
-ng &path) {
-  return Delete(path, Headers(), std::string(), std:

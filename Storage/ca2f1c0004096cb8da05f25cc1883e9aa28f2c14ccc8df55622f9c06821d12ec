@@ -1,5 +1,0 @@
-);
-      }
-    } else {
-      X509_STORE_free(ca_cert_store);
-  

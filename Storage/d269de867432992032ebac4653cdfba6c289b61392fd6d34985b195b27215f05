@@ -1,2 +1,0 @@
- *buf, size_t n, uint64_t /*off*/,
-                      uint64_

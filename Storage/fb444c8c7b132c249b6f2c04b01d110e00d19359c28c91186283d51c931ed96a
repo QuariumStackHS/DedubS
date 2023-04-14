@@ -1,8 +1,0 @@
-const auto &content_type = req.get_header_value("Content-Type");
-    std::string boundary;
-    if (!detail::parse_multipart_boundary(content_type, boundary)) {
-      res.status = 400;
-      return false;
-    }
-
-    multipart_form_data_parser.set_boundary(s

@@ -1,8 +1,0 @@
-Impl::set_digest_auth(const std::string &username,
-                                        const std::string &password) {
-  digest_auth_username_ = username;
-  digest_auth_password_ = password;
-}
-#endif
-
-void ClientImpl::set_keep_alive(bool on) { keep_aliv

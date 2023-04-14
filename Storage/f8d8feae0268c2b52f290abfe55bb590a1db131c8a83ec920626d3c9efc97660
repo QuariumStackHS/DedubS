@@ -1,2 +1,0 @@
-
-      (!res.body.empty() || res.content_length_ > 0 || res.cont

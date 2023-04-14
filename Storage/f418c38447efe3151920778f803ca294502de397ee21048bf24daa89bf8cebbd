@@ -1,2 +1,0 @@
-t != base_dirs_.end(); ++it) {
-    if (it->mount_point == mount_

@@ -1,6 +1,0 @@
-dom_device might actually be deterministic on some
-  // platforms, but due to lack of support in the c++ standard library,
-  // doing better requires either some ugly hacks or breaking portability.
-  std::random_device seed_gen;
-
-  // Request 128 bits of en

@@ -1,5 +1,0 @@
-eaders
-  {
-    detail::BufferStream bstrm;
-
-    if (!bstrm.write

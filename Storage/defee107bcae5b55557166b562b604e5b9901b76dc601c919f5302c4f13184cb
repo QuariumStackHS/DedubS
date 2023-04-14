@@ -1,2 +1,0 @@
-_once(initialize_cert_, [&]() {
-    std::lock_guard<std::mutex> 

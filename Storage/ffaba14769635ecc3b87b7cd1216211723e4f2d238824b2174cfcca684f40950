@@ -1,6 +1,0 @@
-           std::string &data) {
-  return process_multipart_ranges_data(
-      req, res, boundary, content_type,
-      [&](const std::string &token) { data += token; },
-      [&](const std::string &token) { data += token; },
-      [&](size_t offset, size_t l

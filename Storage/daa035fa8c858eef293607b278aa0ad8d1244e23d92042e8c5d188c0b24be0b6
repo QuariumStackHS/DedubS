@@ -1,6 +1,0 @@
- return true;
-  }
-
-private:
-  void clear_file_info() {
-    file_

@@ -1,4 +1,0 @@
-imeout(sec, usec);
-}
-
-void Client::set_write_timeout(time_t sec,

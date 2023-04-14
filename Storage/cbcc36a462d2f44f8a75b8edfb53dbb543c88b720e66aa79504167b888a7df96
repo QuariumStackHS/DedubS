@@ -1,2 +1,0 @@
- &svr_sock, socket_t sock,
-                      size_t keep_ali

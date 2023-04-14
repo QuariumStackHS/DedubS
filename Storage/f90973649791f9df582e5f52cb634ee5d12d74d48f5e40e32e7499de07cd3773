@@ -1,3 +1,0 @@
-x509) {
-      X509_STORE_add_cert(store, x509);
-      X509_free(

@@ -1,9 +1,0 @@
-ing &token) { strm.write(token); },
-      [&](size_t offset, size_t length) {
-        return write_content(strm, res.content_provider_, offset, length,
-                             is_shutting_down);
-      });
-}
-
-std::pair<size_t, size_t>
-get_range_offset_

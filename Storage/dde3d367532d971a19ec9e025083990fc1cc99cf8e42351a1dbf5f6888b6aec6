@@ -1,9 +1,0 @@
-nnection_timeout_usec_,
-        read_timeout_sec_, read_timeout_usec_, write_timeout_sec_,
-        write_timeout_usec_, interface_, error);
-  }
-
-  // Check is custom IP specified for host_
-  std::string ip;
-  auto it = addr_map_.find(host_);
-  if (it != ad

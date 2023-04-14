@@ -1,3 +1,0 @@
-Headers dummy;
-    detail::read_headers(strm, dummy);
-    res.st

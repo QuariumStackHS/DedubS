@@ -1,4 +1,0 @@
-  size_t buf_epos_ = 0;
-};
-
-std::string to_lower(const char *beg

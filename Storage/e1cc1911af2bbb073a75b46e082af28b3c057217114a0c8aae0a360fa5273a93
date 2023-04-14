@@ -1,7 +1,0 @@
-ng &content_type) {
-  return cli_->Post(path, headers, std::move(content_provider), content_type);
-}
-Result Client::Post(const std::string &path, const Params &params) {
-  return cli_->Post(path, params);
-}
-Result Client::Post(const std::string &path, cons

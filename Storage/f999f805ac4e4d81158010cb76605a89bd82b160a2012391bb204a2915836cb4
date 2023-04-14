@@ -1,3 +1,0 @@
-td::string dash_ = "--";
-  const std::string crlf_ = "\r\n";
-  c

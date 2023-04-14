@@ -1,2 +1,0 @@
-sor::brotli_compressor() {
-  state_ = BrotliEncoderCreateInstanc

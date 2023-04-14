@@ -1,3 +1,0 @@
-onse &res, Error &error) {
-  {
-    std::lock_guard<std::mutex> g

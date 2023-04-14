@@ -1,2 +1,0 @@
-tting_down = [this]() {
-    return this->svr_sock_ == INVALID_SO

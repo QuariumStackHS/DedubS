@@ -1,4 +1,0 @@
- enabled) {
-  server_certificate_verification_ = enabled;
-}
-#end

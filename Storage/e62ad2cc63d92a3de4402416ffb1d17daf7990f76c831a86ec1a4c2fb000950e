@@ -1,4 +1,0 @@
-->Head(path, headers);
-}
-
-Result Client::Post(const std::string 

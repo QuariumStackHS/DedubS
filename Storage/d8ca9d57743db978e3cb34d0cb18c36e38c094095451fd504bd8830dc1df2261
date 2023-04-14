@@ -1,7 +1,0 @@
-read_content_core(strm, req, res, std::move(receiver),
-                           std::move(multipart_header),
-                           std::move(multipart_receiver));
-}
-
-bool Server::read_content_core(Stream &strm, Request &req, Response &res,
-          

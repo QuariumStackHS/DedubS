@@ -1,5 +1,0 @@
- return true;
-}
-
-template <typename T>
-bool parse_header(const c

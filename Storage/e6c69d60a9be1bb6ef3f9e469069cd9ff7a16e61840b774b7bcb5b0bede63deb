@@ -1,5 +1,0 @@
-n result;
-}
-
-std::string decode_url(const std::string &s,
-      

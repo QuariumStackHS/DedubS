@@ -1,5 +1,0 @@
-e <typename T>
-bool write_multipart_ranges_data(Stream &strm, const Request &req,
-                                        Response &res,
-                                        const std::string &boundary,
-                                        const std:

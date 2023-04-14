@@ -1,4 +1,0 @@
- = offsets.first;
-    auto length = offsets.second;
-
-    ctoken(

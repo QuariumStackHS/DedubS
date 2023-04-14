@@ -1,4 +1,0 @@
-ate:
-  socket_t sock_;
-  SSL *ssl_;
-  time_t read_timeout_sec_;

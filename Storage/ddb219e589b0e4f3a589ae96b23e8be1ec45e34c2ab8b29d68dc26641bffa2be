@@ -1,3 +1,0 @@
-    fixed_buffer_[fixed_buffer_used_size_] = '\0';
-  } else {
-  

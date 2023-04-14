@@ -1,5 +1,0 @@
-f obj) {
-  if (obj) { CFRelease(obj); }
-}
-
-bool retrieve_certs_f

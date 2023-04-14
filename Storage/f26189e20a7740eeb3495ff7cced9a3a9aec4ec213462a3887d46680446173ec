@@ -1,3 +1,0 @@
-n false; }
-        while (pos < buf_size()) {
-          // Empty

@@ -1,7 +1,0 @@
-rite_content(strm, res.content_provider_, offset, length,
-                                   is_shutting_down);
-    } else {
-      return detail::write_multipart_ranges_data(
-          strm, req, res, boundary, content_type, is_shutting_down);
-    }
-  } el

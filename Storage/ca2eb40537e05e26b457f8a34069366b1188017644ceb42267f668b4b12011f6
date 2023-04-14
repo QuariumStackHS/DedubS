@@ -1,5 +1,0 @@
-return true; });
-
-  auto ret = false;
-  if (ssl) {
-    ret = det

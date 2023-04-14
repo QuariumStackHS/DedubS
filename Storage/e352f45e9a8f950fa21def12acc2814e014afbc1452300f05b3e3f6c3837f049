@@ -1,7 +1,0 @@
-      [&](const char *buf2, size_t n2) {
-                                            return receiver(buf2, n2, off, len);
-                                          });
-        };
-        return callback(std::move(out));
-      } else {
-        status = 500;

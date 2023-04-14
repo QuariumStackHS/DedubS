@@ -1,2 +1,0 @@
- auto length = offsets.second;
-      auto content_range = detail

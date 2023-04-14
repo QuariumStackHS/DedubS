@@ -1,7 +1,0 @@
-() % (sizeof(data) - 1)];
-  }
-
-  return result;
-}
-
-bool is_multi

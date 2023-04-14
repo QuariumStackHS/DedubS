@@ -1,2 +1,0 @@
- 'Accept-Encoding' has gzip, not gzip;q=0
-  ret = s.find("gzip")

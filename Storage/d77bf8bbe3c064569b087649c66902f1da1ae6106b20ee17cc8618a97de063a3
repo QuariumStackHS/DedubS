@@ -1,2 +1,0 @@
-pe, rp->ai_protocol, nullptr, 0,
-                   WSA_FLAG_NO_

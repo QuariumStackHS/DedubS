@@ -1,4 +1,0 @@
-content_type);
-}
-
-Result ClientImpl::Post(const std::string &pat

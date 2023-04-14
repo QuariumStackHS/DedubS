@@ -1,9 +1,0 @@
-
-
-  return send_(std::move(req));
-}
-
-Result ClientImpl::Delete(const std::string &path,
-                                 const std::string &body,
-                                 const std::string &content_type) {
-  return Delete(path, Headers(), body.data(

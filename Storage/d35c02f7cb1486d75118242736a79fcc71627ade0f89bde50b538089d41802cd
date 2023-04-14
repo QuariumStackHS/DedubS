@@ -1,7 +1,0 @@
-ny more and error out. Everything else
-  // (closing the socket, shutting ssl down) is unsafe because these actions are
-  // not thread-safe.
-  if (socket_requests_in_flight_ > 0) {
-    shutdown_socket(socket_);
-
-    // Aside from that, we set a flag for t

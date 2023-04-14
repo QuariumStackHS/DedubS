@@ -1,2 +1,0 @@
-td::string(beg, key_end);
-    auto val = compare_case_ignore(key

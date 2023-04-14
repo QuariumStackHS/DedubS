@@ -1,3 +1,0 @@
-ream : public Stream {
-public:
-  SocketStream(socket_t sock, tim

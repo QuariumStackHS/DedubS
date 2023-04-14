@@ -1,7 +1,0 @@
-r("REMOTE_PORT", std::to_string(req.remote_port));
-
-  strm.get_local_ip_and_port(req.local_addr, req.local_port);
-  req.set_header("LOCAL_ADDR", req.local_addr);
-  req.set_header("LOCAL_PORT", std::to_string(req.local_port));
-
-  if (req.has_header("Range"))

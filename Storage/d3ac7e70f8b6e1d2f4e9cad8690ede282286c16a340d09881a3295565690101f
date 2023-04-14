@@ -1,4 +1,0 @@
-len = i - beg;
-    assert(len > 0);
-
-    if (!path.compare(beg, 

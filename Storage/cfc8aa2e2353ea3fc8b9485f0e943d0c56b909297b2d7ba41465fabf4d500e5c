@@ -1,2 +1,0 @@
-rver &Server::set_post_routing_handler(Handler handler) {
-  post

@@ -1,2 +1,0 @@
-"Content-Range: ");
-    stoken(make_content_range_header_field(o

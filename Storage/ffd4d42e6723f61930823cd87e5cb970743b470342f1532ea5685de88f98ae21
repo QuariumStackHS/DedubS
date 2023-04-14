@@ -1,2 +1,0 @@
-d::regex_match(req.path, req.matches, pattern)) {
-      handler(

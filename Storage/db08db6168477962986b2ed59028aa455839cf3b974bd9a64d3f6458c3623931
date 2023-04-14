@@ -1,2 +1,0 @@
- {
-  SSLSocketStream strm(sock, ssl, read_timeout_sec, read_time

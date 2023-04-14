@@ -1,2 +1,0 @@
-st std::string &ca_cert_dir_path) {
-  cli_->set_ca_cert_path(ca_

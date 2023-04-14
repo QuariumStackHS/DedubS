@@ -1,3 +1,0 @@
-ith_trailer(nullptr); };
-
-  data_sink.done_with_trailer = [&](co
