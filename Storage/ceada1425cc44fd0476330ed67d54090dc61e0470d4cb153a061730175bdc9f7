@@ -1,0 +1,5 @@
+ems) != errSecSuccess) {
+    return false;
+  }
+
+  certs.reset(ro

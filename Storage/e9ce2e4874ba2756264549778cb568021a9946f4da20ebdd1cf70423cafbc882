@@ -1,0 +1,5 @@
+:string &path) {
+  return Get(path, Headers(), Progress());
+}
+
+R

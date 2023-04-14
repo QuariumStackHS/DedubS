@@ -1,0 +1,9 @@
+esult ClientImpl::Get(const std::string &path, Progress progress) {
+  return Get(path, Headers(), std::move(progress));
+}
+
+Result ClientImpl::Get(const std::string &path, const Headers &headers) {
+  return Get(path, headers, Progress());
+}
+
+Result ClientIm

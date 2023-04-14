@@ -1,0 +1,2 @@
+:set_error_handler(HandlerWithResponse handler) {
+  error_handle

@@ -1,0 +1,6 @@
+                                          Response &res) {
+  return write_response_core(strm, close_connection, req, res, true);
+}
+
+bool Server::write_response_core(Stream &strm, bool close_connection,
+                                        const Request &

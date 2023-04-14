@@ -1,0 +1,11 @@
+                           int socket_flags,
+                             SocketOptions socket_options) const {
+  return detail::create_socket(
+      host, std::string(), port, address_family_, socket_flags, tcp_nodelay_,
+      std::move(socket_options),
+      [](socket_t sock, struct addrinfo &ai) -> bool {
+        if (::bind(sock, ai.ai_addr, static_cast<socklen_t>(ai.ai_addrlen))) {
+          return false;
+        }
+        if (::listen(sock, CPPHTTPLIB_LISTEN_BACKLOG)) { return false; }
+        return t

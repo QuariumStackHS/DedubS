@@ -1,0 +1,2 @@
+nstexpr size_t max_avail_in =
+        (std::numeric_limits<declt

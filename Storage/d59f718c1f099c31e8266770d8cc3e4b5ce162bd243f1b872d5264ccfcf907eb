@@ -1,0 +1,10 @@
+  ctx_, SSL_VERIFY_PEER | SSL_VERIFY_FAIL_IF_NO_PEER_CERT, nullptr);
+    }
+  }
+}
+
+SSLServer::SSLServer(
+    const std::function<bool(SSL_CTX &ssl_ctx)> &setup_ssl_ctx_callback) {
+  ctx_ = SSL_CTX_new(TLS_method());
+  if (ctx_) {
+    if (!setup_ssl_ctx_callb

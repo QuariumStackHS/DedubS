@@ -1,0 +1,7 @@
+
+
+// https://stackoverflow.com/questions/440133/how-do-i-create-a-random-alpha-numeric-string-in-c/440240#answer-440240
+std::string random_string(size_t length) {
+  auto randchar = []() -> char {
+    const char charset[] = "0123456789"
+                     

@@ -1,0 +1,5 @@
+sec) {
+  cli_->set_connection_timeout(sec, usec);
+}
+
+void Client

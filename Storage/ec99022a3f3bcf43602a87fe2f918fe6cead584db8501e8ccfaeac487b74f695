@@ -1,0 +1,4 @@
+rface(intf);
+}
+
+void Client::set_proxy(const std::string &host, 

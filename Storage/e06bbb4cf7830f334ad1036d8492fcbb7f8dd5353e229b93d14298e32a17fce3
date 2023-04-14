@@ -1,0 +1,7 @@
+s &headers,
+                           const std::string &body,
+                           const std::string &content_type) {
+  return cli_->Post(path, headers, body, content_type);
+}
+Result Client::Post(const std::string &path, size_t content_length,
+    

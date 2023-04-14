@@ -1,0 +1,7 @@
+(ctx_);
+      ctx_ = nullptr;
+    } else if (client_ca_cert_file_path || client_ca_cert_dir_path) {
+      SSL_CTX_load_verify_locations(ctx_, client_ca_cert_file_path,
+                                    client_ca_cert_dir_path);
+
+      SSL_CTX_set_verify(

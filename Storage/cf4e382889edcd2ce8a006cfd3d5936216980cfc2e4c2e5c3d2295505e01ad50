@@ -1,0 +1,7 @@
+estUpdate(context.get(), s.c_str(), s.size());
+  EVP_DigestFinal_ex(context.get(), hash, &hash_length);
+
+  std::stringstream ss;
+  for (auto i = 0u; i < hash_length; ++i) {
+    ss << std::hex << std::setw(2) << std::setfill('0')
+       << (unsigned int)hash

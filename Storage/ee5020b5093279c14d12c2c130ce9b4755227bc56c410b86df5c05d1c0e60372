@@ -1,0 +1,6 @@
+Response &res,
+                                        bool head) {
+  for (const auto &entry : base_dirs_) {
+    // Prefix match
+    if (!req.path.compare(0, entry.mount_point.size(), entry.mount_point)) {
+      std::string sub_path = "/" + req.path.substr(

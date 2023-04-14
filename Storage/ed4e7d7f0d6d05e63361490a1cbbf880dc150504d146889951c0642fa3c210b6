@@ -1,0 +1,55 @@
+)*))");
+  std::smatch m;
+  if (std::regex_match(s, m, re_first_range)) {
+    auto pos = static_cast<size_t>(m.position(1));
+    auto len = static_cast<size_t>(m.length(1));
+    bool all_valid_ranges = true;
+    split(&s[pos], &s[pos + len], ',', [&](const char *b, const char *e) {
+      if (!all_valid_ranges) return;
+      static auto re_another_range = std::regex(R"(\s*(\d*)-(\d*))");
+      std::cmatch cm;
+      if (std::regex_match(b, e, cm, re_another_range)) {
+        ssize_t first = -1;
+        if (!cm.str(1).empty()) {
+          first = static_cast<ssize_t>(std::stoll(cm.str(1)));
+        }
+
+        ssize_t last = -1;
+        if (!cm.str(2).empty()) {
+          last = static_cast<ssize_t>(std::stoll(cm.str(2)));
+        }
+
+        if (first != -1 && last != -1 && first > last) {
+          all_valid_ranges = false;
+          return;
+        }
+        ranges.emplace_back(std::make_pair(first, last));
+      }
+    });
+    return all_valid_ranges;
+  }
+  return false;
+#ifdef CPPHTTPLIB_NO_EXCEPTIONS
+}
+#else
+} catch (...) { return false; }
+#endif
+
+class MultipartFormDataParser {
+public:
+  MultipartFormDataParser() = default;
+
+  void set_boundary(std::string &&boundary) {
+    boundary_ = boundary;
+    dash_boundary_crlf_ = dash_ + boundary_ + crlf_;
+    crlf_dash_boundary_ = crlf_ + dash_ + boundary_;
+  }
+
+  bool is_valid() const { return is_valid_; }
+
+  bool parse(const char *buf, size_t n, const ContentReceiver &content_callback,
+             const MultipartContentHeader &header_callback) {
+
+    // TODO: support 'filename*'
+    static const std::regex re_content_disposition(
+        R"~(^Content-Disposition:\s*form-data;\s*name="(.*?)"(

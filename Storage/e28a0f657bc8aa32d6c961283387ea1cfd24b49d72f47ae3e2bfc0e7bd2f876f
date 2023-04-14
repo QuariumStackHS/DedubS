@@ -1,0 +1,9 @@
+token) {
+  bearer_token_auth_token_ = token;
+}
+
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+void ClientImpl::set_digest_auth(const std::string &username,
+                                        const std::string &password) {
+  digest_auth_username_ = username;
+  dige

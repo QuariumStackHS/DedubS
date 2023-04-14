@@ -1,0 +1,6 @@
+req.headers.clear();
+  }
+
+  Response new_res;
+
+  auto ret = cli.

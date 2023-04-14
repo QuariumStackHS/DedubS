@@ -1,0 +1,12 @@
+rl)) {
+    set_header("Location", url);
+    if (300 <= stat && stat < 400) {
+      this->status = stat;
+    } else {
+      this->status = 302;
+    }
+  }
+}
+
+void Response::set_content(const char *s, size_t n,
+                                  const std::stri

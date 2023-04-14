@@ -1,0 +1,3 @@
+SSL_ERROR_WANT_READ) {
+#endif
+        if (SSL_pending(ssl_) > 0)

@@ -1,0 +1,11 @@
+_, read_timeout_usec_) > 0;
+}
+
+bool SocketStream::is_writable() const {
+  return select_write(sock_, write_timeout_sec_, write_timeout_usec_) > 0 &&
+         is_socket_alive(sock_);
+}
+
+ssize_t SocketStream::read(char *ptr, size_t size) {
+#ifdef _WIN32
+  si

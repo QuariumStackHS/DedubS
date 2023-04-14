@@ -1,0 +1,2 @@
+status == 100) {
+    if (!line_reader.getline()) { return false;

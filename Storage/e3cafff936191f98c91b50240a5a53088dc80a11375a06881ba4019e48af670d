@@ -1,0 +1,23 @@
+e;
+      break;
+    }
+  }
+
+  freeaddrinfo(result);
+  return ret;
+}
+
+#if !defined _WIN32 && !defined ANDROID && !defined _AIX
+#define USE_IF2IP
+#endif
+
+#ifdef USE_IF2IP
+std::string if2ip(int address_family, const std::string &ifn) {
+  struct ifaddrs *ifap;
+  getifaddrs(&ifap);
+  std::string addr_candidate;
+  for (auto ifa = ifap; ifa; ifa = ifa->ifa_next) {
+    if (ifa->ifa_addr && ifn == ifa->ifa_name &&
+        (AF_UNSPEC == address_family ||
+         ifa->ifa_addr->sa_family == address_family)) {
+      if

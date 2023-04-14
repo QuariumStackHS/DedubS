@@ -1,0 +1,9 @@
+tication_header(
+            req, auth, new_req.authorization_count_, detail::random_string(10),
+            username, password, is_proxy));
+
+        Response new_res;
+
+        ret = send(new_req, new_res, error);
+        if (ret) { res = new_res; }
+      

@@ -1,0 +1,4 @@
+, Headers(), body, content_type);
+}
+
+Result ClientImpl::Patch(co

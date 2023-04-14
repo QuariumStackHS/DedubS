@@ -1,0 +1,2 @@
+path_ = rhs.client_cert_path_;
+  client_key_path_ = rhs.client_k

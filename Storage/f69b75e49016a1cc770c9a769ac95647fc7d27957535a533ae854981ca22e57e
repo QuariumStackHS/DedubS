@@ -1,0 +1,8 @@
+_pair(std::regex(pattern), std::move(handler)));
+  return *this;
+}
+
+Server &Server::Delete(const std::string &pattern,
+                              HandlerWithContentReader handler) {
+  delete_handlers_for_content_reader_.push_back(
+      std::make_pair(s

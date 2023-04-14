@@ -1,0 +1,2 @@
+)
+    : ClientImpl(host, port, std::string(), std::string()) {}

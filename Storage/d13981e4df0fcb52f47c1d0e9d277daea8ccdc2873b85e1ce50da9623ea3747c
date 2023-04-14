@@ -1,0 +1,11 @@
+
+  }
+
+  if (i) {
+    auto r = trim(b, e, beg, i);
+    if (r.first < r.second) { fn(&b[r.first], &b[r.second]); }
+  }
+}
+
+stream_line_reader::stream_line_reader(Stream &strm, char *fixed_buffer,
+                                              size_t fixed_buffe

@@ -1,0 +1,3 @@
+return "image/x-icon";
+  case "tif"_t: return "image/tiff";
+  ca

@@ -1,0 +1,17 @@
+                 const std::string &boundary, bool finish = true) {
+  std::string body;
+
+  for (const auto &item : items) {
+    body += serialize_multipart_formdata_item_begin(item, boundary);
+    body += item.content + serialize_multipart_formdata_item_end();
+  }
+
+  if (finish) body += serialize_multipart_formdata_finish(boundary);
+
+  return body;
+}
+
+std::pair<size_t, size_t>
+get_range_offset_and_length(const Request &req, size_t content_length,
+                            size_t index) {
+  auto r = req.ra

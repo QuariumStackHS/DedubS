@@ -1,0 +1,20 @@
+ while (data_available && !is_shutting_down()) {
+    if (!strm.is_writable()) {
+      error = Error::Write;
+      return false;
+    } else if (!content_provider(offset, 0, data_sink)) {
+      error = Error::Canceled;
+      return false;
+    } else if (!ok) {
+      error = Error::Write;
+      return false;
+    }
+  }
+
+  error = Error::Success;
+  return true;
+}
+
+template <typename T, typename U>
+bool write_content_chunked(Stream &strm,
+                                  const ContentProvider &content_provider,

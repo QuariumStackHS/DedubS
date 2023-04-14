@@ -1,0 +1,3 @@
+ec = static_cast<decltype(tv.tv_usec)>(usec);
+
+  auto ret = hand

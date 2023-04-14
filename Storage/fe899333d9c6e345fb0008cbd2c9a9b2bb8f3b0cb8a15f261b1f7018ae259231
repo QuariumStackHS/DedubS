@@ -1,0 +1,3 @@
+t_boundary(std::string &&boundary) {
+    boundary_ = boundary;
+ 

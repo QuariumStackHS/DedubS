@@ -1,0 +1,15 @@
+}
+    }
+  }
+#endif
+
+  return ret;
+}
+
+bool ClientImpl::redirect(Request &req, Response &res, Error &error) {
+  if (req.redirect_count_ == 0) {
+    error = Error::ExceedRedirectCount;
+    return false;
+  }
+
+  auto location = res.get_header_value("location");

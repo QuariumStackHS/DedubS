@@ -1,0 +1,11 @@
+TX_free(ctx_);
+      ctx_ = nullptr;
+    }
+  }
+}
+
+SSLClient::~SSLClient() {
+  if (ctx_) { SSL_CTX_free(ctx_); }
+  // Make sure to shut down SSL since shutdown_ssl will resolve to the
+  // base function rather than the derived function once we get to the
+  

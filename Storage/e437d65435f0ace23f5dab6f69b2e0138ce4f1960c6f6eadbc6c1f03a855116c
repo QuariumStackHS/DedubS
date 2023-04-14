@@ -1,0 +1,1 @@
+nt::verify_host_with_subject_alt_name(X509 *server_cert) const {

@@ -1,0 +1,24 @@
+ nullptr, &cert_data) !=
+        errSecSuccess) {
+      continue;
+    }
+
+    CFObjectPtr<CFDataRef> cert_data_ptr(cert_data, cf_object_ptr_deleter);
+
+    auto encoded_cert = static_cast<const unsigned char *>(
+        CFDataGetBytePtr(cert_data_ptr.get()));
+
+    auto x509 =
+        d2i_X509(NULL, &encoded_cert, CFDataGetLength(cert_data_ptr.get()));
+
+    if (x509) {
+      X509_STORE_add_cert(store, x509);
+      X509_free(x509);
+      result = true;
+    }
+  }
+
+  return result;
+}
+
+bool load_system_certs_on_ma

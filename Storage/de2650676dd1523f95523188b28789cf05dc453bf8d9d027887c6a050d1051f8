@@ -1,0 +1,9 @@
+_header("Content-Length", length);
+  }
+}
+
+bool Server::dispatch_request_for_content_reader(
+    Request &req, Response &res, ContentReader content_reader,
+    const HandlersForContentReader &handlers) {
+  for (const auto &x : handlers) {
+    const auto &pa

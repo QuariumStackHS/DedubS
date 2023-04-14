@@ -1,0 +1,2 @@
+tring from_i_to_hex(size_t n) {
+  const char *charset = "0123456

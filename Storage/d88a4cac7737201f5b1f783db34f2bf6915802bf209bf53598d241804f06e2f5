@@ -1,0 +1,11 @@
+rn ret;
+}
+
+bool Server::routing(Request &req, Response &res, Stream &strm) {
+  if (pre_routing_handler_ &&
+      pre_routing_handler_(req, res) == HandlerResponse::Handled) {
+    return true;
+  }
+
+  // File handler
+  bool is_head_request = req.method == "HE

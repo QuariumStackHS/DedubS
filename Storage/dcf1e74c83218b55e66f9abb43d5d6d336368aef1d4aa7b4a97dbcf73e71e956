@@ -1,0 +1,10 @@
+res.status == -1) { res.status = 404; }
+    return write_response(strm, close_connection, req, res);
+  }
+}
+
+bool Server::is_valid() const { return true; }
+
+bool Server::process_and_close_socket(socket_t sock) {
+  auto ret = detail::process_server_socket(
+ 

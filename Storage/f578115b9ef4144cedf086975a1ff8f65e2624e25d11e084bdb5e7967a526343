@@ -1,0 +1,2 @@
+g> cache;
+  split(s.data(), s.data() + s.size(), '&', [&](const 

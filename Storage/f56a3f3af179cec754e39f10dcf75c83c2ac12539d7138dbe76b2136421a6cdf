@@ -1,0 +1,12 @@
+ return nullptr;
+    }
+    BIO_set_nbio(bio, 0);
+    set_nonblocking(sock, false);
+  }
+
+  return ssl;
+}
+
+void ssl_delete(std::mutex &ctx_mutex, SSL *ssl,
+                       bool shutdown_gracefully) {
+  // sometimes we may want to skip this to try to av

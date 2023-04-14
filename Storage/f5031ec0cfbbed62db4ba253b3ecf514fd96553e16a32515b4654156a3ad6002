@@ -1,0 +1,4 @@
+= Error::Connection;
+            return false;
+          }
+     

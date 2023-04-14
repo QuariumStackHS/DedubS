@@ -1,0 +1,2 @@
+_pair(std::regex(pattern), std::move(handler)));
+  return *this;

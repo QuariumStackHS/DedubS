@@ -1,0 +1,10 @@
+oken);
+}
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+void Client::set_digest_auth(const std::string &username,
+                                    const std::string &password) {
+  cli_->set_digest_auth(username, password);
+}
+#endif
+
+void Client::set_keep_alive(bool 

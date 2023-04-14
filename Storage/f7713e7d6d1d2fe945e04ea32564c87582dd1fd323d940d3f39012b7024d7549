@@ -1,0 +1,2 @@
+assert((flush == Z_FINISH && ret == Z_STREAM_END) ||
+           

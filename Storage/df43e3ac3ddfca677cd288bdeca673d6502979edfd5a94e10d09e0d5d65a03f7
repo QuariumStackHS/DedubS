@@ -1,0 +1,3 @@
+cos(X509_STORE *store) {
+  auto result = false;
+  CFObjectPtr<CF

@@ -1,0 +1,2 @@
+ClientImpl(host, port) {
+  ctx_ = SSL_CTX_new(TLS_client_method(

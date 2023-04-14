@@ -1,0 +1,7 @@
+tail::ContentProviderAdapter(std::move(provider));
+  content_provider_resource_releaser_ = resource_releaser;
+  is_chunked_content_provider_ = false;
+}
+
+void Response::set_chunked_content_provider(
+    const std::string &content_type, ContentProviderWithout

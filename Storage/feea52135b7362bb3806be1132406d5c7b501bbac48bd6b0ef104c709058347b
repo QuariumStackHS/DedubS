@@ -1,0 +1,1 @@
+     req3.headers.insert(detail::make_digest_authentication_head

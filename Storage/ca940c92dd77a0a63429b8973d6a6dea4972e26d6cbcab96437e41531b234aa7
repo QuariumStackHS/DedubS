@@ -1,0 +1,11 @@
+Patch(const std::string &path, size_t content_length,
+                                ContentProvider content_provider,
+                                const std::string &content_type) {
+  return Patch(path, Headers(), content_length, std::move(content_provider),
+               content_type);
+}
+
+Result ClientImpl::Patch(const std::string &path,
+                                ContentProviderWithoutLength content_provider,
+                                const std::string &content_type) {
+  return Patch(path

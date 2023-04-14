@@ -1,0 +1,2 @@
+05: return "Method Not Allowed";
+  case 406: return "Not Accepta

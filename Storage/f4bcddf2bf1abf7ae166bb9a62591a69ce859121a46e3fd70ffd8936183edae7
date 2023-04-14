@@ -1,0 +1,12 @@
+t_write(sock, timeout_sec, timeout_usec) > 0) { continue; }
+      break;
+    default: break;
+    }
+    return false;
+  }
+  return true;
+}
+
+template <typename T>
+bool process_server_socket_ssl(
+    const std::atomic<socket_t> &svr_sock, SSL *ssl, socket_t s

@@ -1,0 +1,2 @@
+l::split(&host_[0], &host_[host_.size()], '.',
+                [

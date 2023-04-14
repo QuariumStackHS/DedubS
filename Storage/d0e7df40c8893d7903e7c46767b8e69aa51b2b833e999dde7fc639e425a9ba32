@@ -1,0 +1,3 @@
+) {
+  std::memset(&strm_, 0, sizeof(strm_));
+  strm_.zalloc = Z_

@@ -1,0 +1,11 @@
+accept, V setup) {
+  SSL *ssl = nullptr;
+  {
+    std::lock_guard<std::mutex> guard(ctx_mutex);
+    ssl = SSL_new(ctx);
+  }
+
+  if (ssl) {
+    set_nonblocking(sock, true);
+    auto bio = BIO_new_socket(static_cast<int>(sock), BIO_NOCLOSE);
+    BIO_set_nbio(bi

@@ -1,0 +1,15 @@
+   detail::gzip_compressor compressor;
+
+    if (content_provider) {
+      auto ok = true;
+      size_t offset = 0;
+      DataSink data_sink;
+
+      data_sink.write = [&](const char *data, size_t data_len) -> bool {
+        if (ok) {
+          auto last = offset + data_len == content_length;
+
+          auto ret = compressor.compress(
+              data, data_len, last,
+              [&](const char *compressed_data, size_t compressed_data_len) {
+                req.body.append(compressed_data, compressed_data

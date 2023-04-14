@@ -1,0 +1,9 @@
+nterface(const std::string &intf) {
+  cli_->set_interface(intf);
+}
+
+void Client::set_proxy(const std::string &host, int port) {
+  cli_->set_proxy(host, port);
+}
+void Client::set_proxy_basic_auth(const std::string &username,
+                                 

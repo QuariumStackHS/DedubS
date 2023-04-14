@@ -1,0 +1,2 @@
+ auto offsets =
+          detail::get_range_offset_and_length(re

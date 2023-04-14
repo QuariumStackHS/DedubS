@@ -1,0 +1,2 @@
+
+  return send_with_content_provider("PATCH", path, headers, bod

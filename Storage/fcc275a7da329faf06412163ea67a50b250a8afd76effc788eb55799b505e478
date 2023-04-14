@@ -1,0 +1,4 @@
+ult ClientImpl::Post(const std::string &path, const Headers &headers,
+                               const MultipartFormDataItems &items,
+                               const std::string &boundary) {
+  if (!detail::is_multipart_boundary_chars_valid(boundary

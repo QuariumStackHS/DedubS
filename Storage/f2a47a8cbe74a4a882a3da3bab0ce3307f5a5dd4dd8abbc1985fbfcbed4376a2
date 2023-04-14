@@ -1,0 +1,5 @@
+     return;
+    }
+
+    if (!payload.empty()) {
+      // Emit ch

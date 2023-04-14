@@ -1,0 +1,5 @@
+::npos) { return "[" + host + "]"; }
+  return host;
+}
+
+bool Clie

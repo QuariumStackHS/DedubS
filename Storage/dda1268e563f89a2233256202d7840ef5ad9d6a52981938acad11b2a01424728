@@ -1,0 +1,4 @@
+;
+}
+
+Result ClientImpl::Get(const std::string &path, const Param

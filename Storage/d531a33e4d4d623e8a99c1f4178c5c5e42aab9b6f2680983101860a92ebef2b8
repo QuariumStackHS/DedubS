@@ -1,0 +1,4 @@
+n(sock, SD_BOTH);
+#else
+  return shutdown(sock, SHUT_RDWR);
+#end

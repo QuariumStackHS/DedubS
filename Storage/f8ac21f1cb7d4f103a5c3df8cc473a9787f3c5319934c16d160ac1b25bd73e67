@@ -1,0 +1,7 @@
+CPPHTTPLIB_OPENSSL_SUPPORT
+  if ((res.status == 401 || res.status == 407) &&
+      req.authorization_count_ < 5) {
+    auto is_proxy = res.status == 407;
+    const auto &username =
+        is_proxy ? proxy_digest_auth_username_ : digest_auth_username_;
+   

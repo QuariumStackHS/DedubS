@@ -1,0 +1,7 @@
+_ += c;
+  }
+}
+
+int close_socket(socket_t sock) {
+#ifdef _WIN32
+ 

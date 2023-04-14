@@ -1,0 +1,6 @@
+, const std::string &path, const Headers &headers,
+    const char *body, size_t content_length, ContentProvider content_provider,
+    ContentProviderWithoutLength content_provider_without_length,
+    const std::string &content_type) {
+  Request req;
+  req.

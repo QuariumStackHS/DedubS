@@ -1,0 +1,3 @@
+fset, size_t length) {
+        if (offset < res.body.size()) {
+ 

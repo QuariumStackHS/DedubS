@@ -1,0 +1,5 @@
+strm, const ContentProvider &content_provider,
+                          size_t offset, size_t length,
+                          const T &is_shutting_down) {
+  auto error = Error::Success;
+  return write_content(strm, content_provider, offset, length, is_sh

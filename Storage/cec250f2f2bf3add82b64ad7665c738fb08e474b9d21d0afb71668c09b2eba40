@@ -1,0 +1,11 @@
+set = 0;
+  auto data_available = true;
+  auto ok = true;
+  DataSink data_sink;
+
+  data_sink.write = [&](const char *d, size_t l) -> bool {
+    if (ok) {
+      offset += l;
+      if (!strm.is_writable() || !write_data(strm, d, l)) { ok = false; }
+    }
+    r

@@ -1,0 +1,7 @@
+ders, std::string(), std::string());
+}
+
+Result ClientImpl::Delete(const std::string &path, const char *body,
+                                 size_t content_length,
+                                 const std::string &content_type) {
+  return Delete(path, He

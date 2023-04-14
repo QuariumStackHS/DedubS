@@ -1,0 +1,22 @@
+pl::Options(const std::string &path) {
+  return Options(path, Headers());
+}
+
+Result ClientImpl::Options(const std::string &path,
+                                  const Headers &headers) {
+  Request req;
+  req.method = "OPTIONS";
+  req.headers = headers;
+  req.path = path;
+
+  return send_(std::move(req));
+}
+
+size_t ClientImpl::is_socket_open() const {
+  std::lock_guard<std::mutex> guard(socket_mutex_);
+  return socket_.is_open();
+}
+
+socket_t ClientImpl::socket() const { return socket_.sock; }
+
+void ClientIm

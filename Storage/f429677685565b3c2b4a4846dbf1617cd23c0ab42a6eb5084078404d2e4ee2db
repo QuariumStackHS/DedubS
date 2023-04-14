@@ -1,0 +1,7 @@
+entReceiver content_receiver, Progress progress) {
+  return cli_->Get(path, params, headers, response_handler, content_receiver,
+                   progress);
+}
+
+Result Client::Head(const std::string &path) { return cli_->Head(path); }
+Result Client::Head(

@@ -1,0 +1,5 @@
+token_ = token;
+}
+
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+void Client

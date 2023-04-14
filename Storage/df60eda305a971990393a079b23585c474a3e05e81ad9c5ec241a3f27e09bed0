@@ -1,0 +1,4 @@
+B_OPENSSL_SUPPORT
+namespace detail {
+
+template <typename U, type

@@ -1,0 +1,8 @@
+             const std::string &body,
+                             const std::string &content_type) {
+  return cli_->Delete(path, headers, body, content_type);
+}
+Result Client::Options(const std::string &path) {
+  return cli_->Options(path);
+}
+Result Clien

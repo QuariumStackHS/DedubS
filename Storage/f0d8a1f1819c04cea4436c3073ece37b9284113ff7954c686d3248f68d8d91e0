@@ -1,0 +1,11 @@
+l close_connection, Error &error) {
+  // Prepare additional headers
+  if (close_connection) {
+    if (!req.has_header("Connection")) {
+      req.headers.emplace("Connection", "close");
+    }
+  }
+
+  if (!req.has_header("Host")) {
+    if (is_ssl()) {
+      i

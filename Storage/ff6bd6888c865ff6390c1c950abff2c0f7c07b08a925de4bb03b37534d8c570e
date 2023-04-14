@@ -1,0 +1,6 @@
+t_type);
+}
+Result Client::Put(const std::string &path, const Headers &headers,
+                          ContentProviderWithoutLength content_provider,
+                          const std::string &content_type) {
+  return cli_->Put(path, headers, std::move

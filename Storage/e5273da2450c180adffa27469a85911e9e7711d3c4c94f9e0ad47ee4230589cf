@@ -1,0 +1,6 @@
+string &path, const Headers &headers,
+                           const MultipartFormDataItems &items) {
+  return cli_->Post(path, headers, items);
+}
+Result Client::Post(const std::string &path, const Headers &headers,
+                           const Multip

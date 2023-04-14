@@ -1,0 +1,11 @@
+ata.end()) { return it->second.c_str(); }
+
+  using udl::operator""_t;
+
+  switch (str2tag(ext)) {
+  default: return nullptr;
+  case "css"_t: return "text/css";
+  case "csv"_t: return "text/csv";
+  case "htm"_t:
+  case "html"_t: return "text/html";
+  case "js

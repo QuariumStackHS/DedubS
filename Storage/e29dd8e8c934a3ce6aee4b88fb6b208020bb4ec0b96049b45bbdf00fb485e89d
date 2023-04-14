@@ -1,0 +1,3 @@
+t += "%0D"; break;
+    case '\n': result += "%0A"; break;
+    ca

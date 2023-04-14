@@ -1,0 +1,3 @@
+dBeClosed_) {
+    assert(!ret);
+    ret = send_(req, res, error)

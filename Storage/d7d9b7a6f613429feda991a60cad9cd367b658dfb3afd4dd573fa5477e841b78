@@ -1,0 +1,17 @@
+rror);
+  });
+
+  if (!ret) {
+    if (error == Error::Success) { error = Error::Unknown; }
+  }
+
+  return ret;
+}
+
+Result ClientImpl::send(const Request &req) {
+  auto req2 = req;
+  return send_(std::move(req2));
+}
+
+Result ClientImpl::send_(Request &&req) {
+  a

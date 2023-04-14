@@ -1,0 +1,4 @@
+;
+
+  if (req.has_header("Range")) {
+    const auto &range_header

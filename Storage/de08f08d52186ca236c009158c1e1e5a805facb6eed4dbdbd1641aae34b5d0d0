@@ -1,0 +1,5 @@
+ost, int port,
+                              const std::string &client_cert_path,
+                              const std::string &client_key_path)
+    : host_(host), port_(port),
+      host_and_port_(adjust_host_string(host) + ":" + std::to_string(port)),

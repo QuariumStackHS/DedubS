@@ -1,0 +1,7 @@
+       auto read_size = (std::min)<size_t>(1, n - pos);
+        auto ret = multipart_form_data_parser.parse(
+            buf + pos, read_size, multipart_receiver, multipart_header);
+        if (!ret) { return false; }
+        pos += read_size;
+      }
+     

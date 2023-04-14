@@ -1,0 +1,4 @@
+
+  if (location.empty()) { return false; }
+
+  const static std::

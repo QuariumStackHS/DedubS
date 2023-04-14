@@ -1,0 +1,3 @@
+der.size() > CPPHTTPLIB_HEADER_MAX_LENGTH) { return false; }
+
+  

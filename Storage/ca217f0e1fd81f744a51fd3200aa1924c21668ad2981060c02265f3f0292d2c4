@@ -1,0 +1,8 @@
+the-system-certificate-store
+bool load_system_certs_on_windows(X509_STORE *store) {
+  auto hStore = CertOpenSystemStoreW((HCRYPTPROV_LEGACY)NULL, L"ROOT");
+  if (!hStore) { return false; }
+
+  auto result = false;
+  PCCERT_CONTEXT pContext = NULL;
+  while (

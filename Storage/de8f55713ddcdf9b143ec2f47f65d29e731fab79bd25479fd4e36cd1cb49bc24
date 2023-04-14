@@ -1,0 +1,5 @@
+  continue; // Skip invalid line.
+    }
+#endif
+
+    if (line_rea

@@ -1,0 +1,4 @@
+ continue; }
+
+#ifndef _WIN32
+    if (fcntl(sock, F_SETFD, FD_CLO

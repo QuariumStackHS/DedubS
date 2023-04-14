@@ -1,0 +1,5 @@
+:string compressed;
+        if (compressor->compress(res.body.data(), res.body.size(), true,
+                                 [&](const char *data, size_t data_len) {
+                                   compressed.append(data, data_len);
+                   

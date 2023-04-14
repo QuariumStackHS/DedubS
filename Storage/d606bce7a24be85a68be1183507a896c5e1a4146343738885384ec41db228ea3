@@ -1,0 +1,9 @@
+ nullptr, &cert_data) !=
+        errSecSuccess) {
+      continue;
+    }
+
+    CFObjectPtr<CFDataRef> cert_data_ptr(cert_data, cf_object_ptr_deleter);
+
+    auto encoded_cert = static_cast<const unsigned char *>(
+        CFDataGetBytePtr(cert_data_ptr.get()))

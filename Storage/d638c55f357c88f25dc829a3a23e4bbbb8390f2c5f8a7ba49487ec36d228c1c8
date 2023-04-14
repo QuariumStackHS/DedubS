@@ -1,0 +1,4 @@
+)) { return false; }
+
+  auto itr = pattern_components.begin();
+ 

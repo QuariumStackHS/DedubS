@@ -1,0 +1,3 @@
+)) {
+        if (!payload.empty()) {
+          // Emit chunked r

@@ -1,0 +1,2 @@
+;
+      if (detail::parse_www_authenticate(res, auth, is_proxy))

@@ -1,0 +1,2 @@
+on) { cli_->set_keep_alive(on); }
+void Client::set_follow_locati

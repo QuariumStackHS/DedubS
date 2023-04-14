@@ -1,0 +1,9 @@
+        const auto &begin = detail::serialize_multipart_formdata_item_begin(
+            provider_items[cur_item], boundary);
+        offset += begin.size();
+        cur_start = offset;
+        sink.os << begin;
+      }
+
+      DataSink cur_sink;
+      bool 

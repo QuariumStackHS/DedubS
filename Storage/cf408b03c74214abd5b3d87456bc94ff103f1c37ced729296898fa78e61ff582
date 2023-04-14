@@ -1,0 +1,2 @@
+ const std::string &password) {
+  basic_auth_username_ = usernam

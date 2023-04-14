@@ -1,0 +1,2 @@
+"application/atom+xml";
+  case "pdf"_t: return "application/pdf"

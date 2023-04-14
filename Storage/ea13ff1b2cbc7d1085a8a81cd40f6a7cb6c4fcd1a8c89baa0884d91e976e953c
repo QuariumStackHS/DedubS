@@ -1,0 +1,5 @@
+attern), std::move(handler)));
+  return *this;
+}
+
+Server &Server

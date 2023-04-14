@@ -1,0 +1,3 @@
+= on; }
+
+void ClientImpl::set_socket_options(SocketOptions socke

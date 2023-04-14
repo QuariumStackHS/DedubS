@@ -1,0 +1,5 @@
+,
+                               const std::string &content_type) {
+  return send_with_content_provider("POST", path, headers, body.data(),
+                                    body.size(), nullptr, nullptr,
+                                    content_type)

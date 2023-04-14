@@ -1,0 +1,4 @@
+ket(sock, &buf[0], sizeof(buf), MSG_PEEK) > 0;
+}
+
+class SocketSt

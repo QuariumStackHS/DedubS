@@ -1,0 +1,10 @@
+Headers dummy;
+    detail::read_headers(strm, dummy);
+    res.status = 500;
+    return write_response(strm, close_connection, req, res);
+  }
+#endif
+#endif
+
+  // Check if the request URI doesn't exceed the limit
+  if (line_reader.size() > CPPHTTPLIB_REQUEST

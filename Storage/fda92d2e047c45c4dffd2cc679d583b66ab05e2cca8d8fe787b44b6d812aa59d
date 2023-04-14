@@ -1,0 +1,5 @@
+urrent socket as being in use so that it cannot be closed by
+    // anyone else while this request is ongoing, even though we will be
+    // releasing the mutex.
+    if (socket_requests_in_flight_ > 1) {
+      assert(socket_requests_are_from_thread_ == std

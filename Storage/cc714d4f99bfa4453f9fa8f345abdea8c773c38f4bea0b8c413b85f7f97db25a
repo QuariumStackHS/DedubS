@@ -1,0 +1,12 @@
+&path,
+                              const MultipartFormDataItems &items) {
+  return Put(path, Headers(), items);
+}
+
+Result ClientImpl::Put(const std::string &path, const Headers &headers,
+                              const MultipartFormDataItems &items) {
+  const auto &boundary = detail::make_multipart_data_boundary();
+  const auto &content_type =
+      detail::serialize_multipart_formdata_get_content_type(boundary);
+  const auto &body = detail::serialize_multipart_formdata(items, boundary);
+  return Put(

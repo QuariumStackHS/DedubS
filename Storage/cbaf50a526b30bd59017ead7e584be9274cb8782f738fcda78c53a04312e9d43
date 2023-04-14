@@ -1,0 +1,17 @@
+  time_t read_timeout_usec_;
+  time_t write_timeout_sec_;
+  time_t write_timeout_usec_;
+};
+#endif
+
+bool keep_alive(socket_t sock, time_t keep_alive_timeout_sec) {
+  using namespace std::chrono;
+  auto start = steady_clock::now();
+  while (true) {
+    auto val = select_read(sock, 0, 10000);
+    if (val < 0) {
+      return false;
+    } else if (val == 0) {
+      auto current = steady_clock::now();
+      auto duration = duration_cast<milliseconds>(current - start);
+      auto timeout = keep_alive_timeout_sec *

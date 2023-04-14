@@ -1,0 +1,3 @@
+compressor) {
+  auto error = Error::Success;
+  return write_cont

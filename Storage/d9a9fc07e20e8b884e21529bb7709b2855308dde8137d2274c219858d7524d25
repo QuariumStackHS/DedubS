@@ -1,0 +1,3 @@
+nnection_error() {
+#ifdef _WIN32
+  return WSAGetLastError() != W

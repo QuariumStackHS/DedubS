@@ -1,0 +1,25 @@
+file_path;
+  ca_cert_dir_path_ = ca_cert_dir_path;
+}
+
+void ClientImpl::set_ca_cert_store(X509_STORE *ca_cert_store) {
+  if (ca_cert_store && ca_cert_store != ca_cert_store_) {
+    ca_cert_store_ = ca_cert_store;
+  }
+}
+#endif
+
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+void ClientImpl::enable_server_certificate_verification(bool enabled) {
+  server_certificate_verification_ = enabled;
+}
+#endif
+
+void ClientImpl::set_logger(Logger logger) {
+  logger_ = std::move(logger);
+}
+
+/*
+ * SSL Implementation
+ */
+#ifdef CPPHTTPLI

@@ -1,0 +1,16 @@
+onst char *body, size_t content_length,
+    ContentProvider content_provider,
+    ContentProviderWithoutLength content_provider_without_length,
+    const std::string &content_type, Error &error) {
+  if (!content_type.empty()) {
+    req.headers.emplace("Content-Type", content_type);
+  }
+
+#ifdef CPPHTTPLIB_ZLIB_SUPPORT
+  if (compress_) { req.headers.emplace("Content-Encoding", "gzip"); }
+#endif
+
+#ifdef CPPHTTPLIB_ZLIB_SUPPORT
+  if (compress_ && !content_provider_without_length) {
+    // TODO: Brotli support
+ 

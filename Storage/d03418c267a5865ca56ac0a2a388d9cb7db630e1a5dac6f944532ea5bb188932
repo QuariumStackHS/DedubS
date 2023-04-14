@@ -1,0 +1,5 @@
+eturn glowable_buffer_.data();
+  }
+}
+
+size_t stream_line_reader:

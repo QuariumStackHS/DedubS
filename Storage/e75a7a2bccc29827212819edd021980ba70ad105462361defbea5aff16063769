@@ -1,0 +1,2 @@
+l_connect_or_accept(ssl)) != 1) {
+    auto err = SSL_get_error(s

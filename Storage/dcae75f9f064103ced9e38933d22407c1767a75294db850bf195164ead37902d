@@ -1,0 +1,2 @@
+lgo == "SHA-256"   ? detail::SHA_256
+             : algo == "SHA

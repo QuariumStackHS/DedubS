@@ -1,0 +1,13 @@
+; }
+      line_terminator_len = 1;
+    }
+#else
+    } else {
+      continue; // Skip invalid line.
+    }
+#endif
+
+    if (line_reader.size() > CPPHTTPLIB_HEADER_MAX_LENGTH) { return false; }
+
+    // Exclude line terminator
+    auto end = line_reader.ptr() + 

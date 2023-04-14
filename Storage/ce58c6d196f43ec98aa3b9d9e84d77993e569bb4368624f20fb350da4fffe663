@@ -1,0 +1,9 @@
+algo) {
+  auto context = std::unique_ptr<EVP_MD_CTX, decltype(&EVP_MD_CTX_free)>(
+      EVP_MD_CTX_new(), EVP_MD_CTX_free);
+
+  unsigned int hash_length = 0;
+  unsigned char hash[EVP_MAX_MD_SIZE];
+
+  EVP_DigestInit_ex(context.get(), algo, nullptr);
+  EVP_Dig

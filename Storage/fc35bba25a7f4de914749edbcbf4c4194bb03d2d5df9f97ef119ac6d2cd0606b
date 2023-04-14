@@ -1,0 +1,9 @@
+                            int socket_flags) {
+  if (bind_internal(host, port, socket_flags) < 0) return false;
+  return true;
+}
+int Server::bind_to_any_port(const std::string &host, int socket_flags) {
+  return bind_internal(host, 0, socket_flags);
+}
+
+bo

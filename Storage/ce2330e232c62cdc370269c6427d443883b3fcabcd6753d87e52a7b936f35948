@@ -1,0 +1,2 @@
+mpl cli(next_host.c_str(), next_port);
+      cli.copy_settings(*

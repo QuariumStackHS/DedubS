@@ -1,0 +1,9 @@
+ody.max_size()) {
+                      return false;
+                    }
+                    res.body.append(buf, n);
+                    return true;
+                  });
+
+    auto progress = [&](uint64_t current, uint64_t total) {
+      if (!req.prog

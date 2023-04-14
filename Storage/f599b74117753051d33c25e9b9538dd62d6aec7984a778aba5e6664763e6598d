@@ -1,0 +1,4 @@
+q.headers);
+
+    // Flush buffer
+    auto &data = bstrm.get_buff

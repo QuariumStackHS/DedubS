@@ -1,0 +1,2 @@
+er();
+    if (!detail::write_data(strm, data.data(), data.size()

@@ -1,0 +1,8 @@
+        [&](const char *b, const char *e) {
+                  pattern_components.emplace_back(std::string(b, e));
+                });
+
+  if (host_components_.size() != pattern_components.size()) { return false; }
+
+  auto itr = pattern_components.begin();
+ 

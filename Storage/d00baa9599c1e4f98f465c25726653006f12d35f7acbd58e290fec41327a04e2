@@ -1,0 +1,3 @@
+> buf_.size()) { buf_.resize(remaining_size + n); }
+
+    for (si

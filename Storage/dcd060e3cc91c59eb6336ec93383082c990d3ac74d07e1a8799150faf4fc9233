@@ -1,0 +1,9 @@
+ boundary); }
+
+  // Prepare additional headers
+  if (close_connection || req.get_header_value("Connection") == "close") {
+    res.set_header("Connection", "close");
+  } else {
+    std::stringstream ss;
+    ss << "timeout=" << keep_alive_timeout_sec_
+      

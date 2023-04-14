@@ -1,0 +1,2 @@
+, size_t, DataSink &sink) {
+    return content_provider_(offset,

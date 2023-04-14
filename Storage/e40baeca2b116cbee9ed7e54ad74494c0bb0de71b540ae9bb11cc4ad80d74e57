@@ -1,0 +1,7 @@
+                                            std::move(header),
+                                                      std::move(receiver));
+          });
+
+      if (req.method == "POST") {
+        if (dispatch_request_for_content_reader(
+                req

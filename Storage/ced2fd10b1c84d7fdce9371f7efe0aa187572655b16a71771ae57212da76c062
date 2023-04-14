@@ -1,0 +1,12 @@
+ write_timeout_sec_ = sec;
+  write_timeout_usec_ = usec;
+  return *this;
+}
+
+Server &Server::set_idle_interval(time_t sec, time_t usec) {
+  idle_interval_sec_ = sec;
+  idle_interval_usec_ = usec;
+  return *this;
+}
+
+Server &Server::set_payload_max_length(size

@@ -1,0 +1,2 @@
+the socket.
+    std::lock_guard<std::mutex> guard(socket_mutex_)

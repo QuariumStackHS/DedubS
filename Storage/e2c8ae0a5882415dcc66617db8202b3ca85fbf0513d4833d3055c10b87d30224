@@ -1,0 +1,3 @@
+ tabs.
+  while (beg < end && is_space_or_tab(end[-1])) {
+    end

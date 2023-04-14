@@ -1,0 +1,12 @@
+  values.push_back(it->second);
+  }
+  return values;
+}
+
+// Response implementation
+bool Response::has_header(const std::string &key) const {
+  return headers.find(key) != headers.end();
+}
+
+std::string Response::get_header_value(const std::string &key,
+    

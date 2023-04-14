@@ -1,0 +1,19 @@
+emplace(key, val);
+  }
+}
+
+bool Request::has_param(const std::string &key) const {
+  return params.find(key) != params.end();
+}
+
+std::string Request::get_param_value(const std::string &key,
+                                            size_t id) const {
+  auto rng = params.equal_range(key);
+  auto it = rng.first;
+  std::advance(it, static_cast<ssize_t>(id));
+  if (it != rng.second) { return it->second; }
+  return std::string();
+}
+
+size_t Request::get_param_value_count(const std::string &key) const {
+  auto r 

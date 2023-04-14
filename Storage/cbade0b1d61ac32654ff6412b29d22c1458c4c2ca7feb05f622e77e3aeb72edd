@@ -1,0 +1,4 @@
+ring result;
+  result.reserve(s.size());
+
+  for (size_t i = 0; s

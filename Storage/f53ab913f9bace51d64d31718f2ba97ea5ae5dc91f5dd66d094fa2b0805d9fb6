@@ -1,0 +1,4 @@
+etLength(cert_data_ptr.get()));
+
+    if (x509) {
+      X509_STOR

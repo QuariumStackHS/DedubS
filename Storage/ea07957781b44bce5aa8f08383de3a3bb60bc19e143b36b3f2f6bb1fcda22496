@@ -1,0 +1,3 @@
+SL_CTX_free(ctx_);
+      ctx_ = nullptr;
+    } else if (client_c

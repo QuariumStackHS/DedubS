@@ -1,0 +1,10 @@
+{
+    type = GEN_IPADD;
+    addr_len = sizeof(struct in6_addr);
+  } else if (inet_pton(AF_INET, host_.c_str(), &addr)) {
+    type = GEN_IPADD;
+    addr_len = sizeof(struct in_addr);
+  }
+#endif
+
+  auto alt_names = static_cast<const struct stack_st_GENERAL_NA

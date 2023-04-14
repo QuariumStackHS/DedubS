@@ -1,0 +1,2 @@
+ClientImpl::set_interface(const std::string &intf) {
+  interface

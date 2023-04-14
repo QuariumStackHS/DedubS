@@ -1,0 +1,16 @@
+                            int socket_flags) {
+  if (bind_internal(host, port, socket_flags) < 0) return false;
+  return true;
+}
+int Server::bind_to_any_port(const std::string &host, int socket_flags) {
+  return bind_internal(host, 0, socket_flags);
+}
+
+bool Server::listen_after_bind() {
+  auto se = detail::scope_exit([&]() { done_ = true; });
+  return listen_internal();
+}
+
+bool Server::listen(const std::string &host, int port,
+                           int socket_flags) {
+  auto se = detail::scope_exit([&

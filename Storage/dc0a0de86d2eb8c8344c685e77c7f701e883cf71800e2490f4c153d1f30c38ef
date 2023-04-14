@@ -1,0 +1,1 @@
+!provider_items[cur_item].provider(offset - cur_start, cur_sink)

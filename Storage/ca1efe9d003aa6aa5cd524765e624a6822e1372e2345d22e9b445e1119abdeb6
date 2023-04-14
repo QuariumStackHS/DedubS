@@ -1,0 +1,7 @@
+)*))");
+  std::smatch m;
+  if (std::regex_match(s, m, re_first_range)) {
+    auto pos = static_cast<size_t>(m.position(1));
+    auto len = static_cast<size_t>(m.length(1));
+    bool all_valid_ranges = true;
+    split(&s[pos], &s[pos + len], ',', [&](const 

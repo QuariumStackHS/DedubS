@@ -1,0 +1,10 @@
+  req.headers.insert(header);
+    }
+  }
+
+  auto ret = false;
+  auto close_connection = !keep_alive_;
+
+  auto se = detail::scope_exit([&]() {
+    // Briefly lock mutex in order to mark that a request is no longer ongoing
+    std::lock_guard<std::mutex> guar

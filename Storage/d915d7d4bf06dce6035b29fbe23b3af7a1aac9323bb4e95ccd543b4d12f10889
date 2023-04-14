@@ -1,0 +1,13 @@
+ content_type);
+}
+
+Result ClientImpl::Put(const std::string &path,
+                              ContentProviderWithoutLength content_provider,
+                              const std::string &content_type) {
+  return Put(path, Headers(), std::move(content_provider), content_type);
+}
+
+Result ClientImpl::Put(const std::string &path, const Headers &headers,
+                              size_t content_length,
+                              ContentProvider content_provider,
+                              const s

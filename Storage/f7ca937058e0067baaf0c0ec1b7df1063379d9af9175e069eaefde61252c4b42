@@ -1,0 +1,15 @@
+ } else {
+      return -1;
+    }
+  } else {
+    return port;
+  }
+}
+
+bool Server::listen_internal() {
+  auto ret = true;
+  is_running_ = true;
+  auto se = detail::scope_exit([&]() { is_running_ = false; });
+
+  {
+    std::unique_ptr<TaskQueue> task_queue(new

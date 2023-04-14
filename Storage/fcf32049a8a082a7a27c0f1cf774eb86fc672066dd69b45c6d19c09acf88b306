@@ -1,0 +1,11 @@
+NEEDS_MORE_INPUT
+                        : BROTLI_DECODER_RESULT_ERROR;
+}
+
+brotli_decompressor::~brotli_decompressor() {
+  if (decoder_s) { BrotliDecoderDestroyInstance(decoder_s); }
+}
+
+bool brotli_decompressor::is_valid() const { return decoder_s; }
+
+bool

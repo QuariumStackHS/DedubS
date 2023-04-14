@@ -1,0 +1,4 @@
+ndif
+
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+std::pair<std::string, s

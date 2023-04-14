@@ -1,0 +1,3 @@
+ers
+  if (close_connection) {
+    if (!req.has_header("Connectio

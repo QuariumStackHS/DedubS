@@ -1,0 +1,5 @@
+ }
+
+  auto type = detail::encoding_type(req, res);
+
+  if (res.bo

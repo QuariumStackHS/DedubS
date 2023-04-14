@@ -1,0 +1,22 @@
+lfd pfd_read;
+  pfd_read.fd = sock;
+  pfd_read.events = POLLOUT;
+
+  auto timeout = static_cast<int>(sec * 1000 + usec / 1000);
+
+  return handle_EINTR([&]() { return poll(&pfd_read, 1, timeout); });
+#else
+#ifndef _WIN32
+  if (sock >= FD_SETSIZE) { return 1; }
+#endif
+
+  fd_set fds;
+  FD_ZERO(&fds);
+  FD_SET(sock, &fds);
+
+  timeval tv;
+  tv.tv_sec = static_cast<long>(sec);
+  tv.tv_usec = static_cast<decltype(tv.tv_usec)>(usec);
+
+  return handle_EINTR([&]() {
+    return select(static_cast<int>(sock + 1), nullpt

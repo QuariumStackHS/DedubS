@@ -1,0 +1,5 @@
+
+}
+
+Server &Server::Delete(const std::string &pattern,
+         

@@ -1,0 +1,2 @@
+ng &host, int port)
+    : SSLClient(host, port, std::string(), s

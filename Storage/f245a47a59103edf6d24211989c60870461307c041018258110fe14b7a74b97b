@@ -1,0 +1,8 @@
+, s.data() + s.size(), '&', [&](const char *b, const char *e) {
+    std::string kv(b, e);
+    if (cache.find(kv) != cache.end()) { return; }
+    cache.insert(kv);
+
+    std::string key;
+    std::string val;
+    split(b, e, '=', [&](const char *b2, const char

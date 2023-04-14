@@ -1,0 +1,8 @@
+= false;
+  CFObjectPtr<CFArrayRef> certs(nullptr, cf_object_ptr_deleter);
+  if (retrieve_certs_from_keychain(certs) && certs) {
+    result = add_certs_to_x509_store(certs.get(), store);
+  }
+
+  if (retrieve_root_certs_from_keychain(certs) && certs) {
+    res

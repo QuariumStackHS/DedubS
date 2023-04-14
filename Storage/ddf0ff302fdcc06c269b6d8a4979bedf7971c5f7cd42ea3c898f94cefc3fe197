@@ -1,0 +1,3 @@
+ve = false;
+    if (socket_.is_open()) {
+      is_alive = detail

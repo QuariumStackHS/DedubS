@@ -1,0 +1,1 @@
+      return detail::redirect(cli, req, res, path, location, err

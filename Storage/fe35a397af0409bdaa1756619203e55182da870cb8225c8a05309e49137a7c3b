@@ -1,0 +1,15 @@
+); }
+
+      if (!bind_or_connect(sock, hints)) {
+        close_socket(sock);
+        sock = INVALID_SOCKET;
+      }
+    }
+    return sock;
+  }
+#endif
+
+  auto service = std::to_string(port);
+
+  if (getaddrinfo(node, service.c_str(), &hints, &result)) {
+#if d

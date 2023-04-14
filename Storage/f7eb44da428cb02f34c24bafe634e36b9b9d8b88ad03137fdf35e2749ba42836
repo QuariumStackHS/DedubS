@@ -1,0 +1,13 @@
+&path, const Headers &headers,
+                              ContentReceiver content_receiver) {
+  return Get(path, headers, nullptr, std::move(content_receiver), nullptr);
+}
+
+Result ClientImpl::Get(const std::string &path, const Headers &headers,
+                              ContentReceiver content_receiver,
+                              Progress progress) {
+  return Get(path, headers, nullptr, std::move(content_receiver),
+             std::move(progress));
+}
+
+Result ClientImpl::Get(const std::string &pat

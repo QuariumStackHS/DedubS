@@ -1,0 +1,3 @@
+  Error &error) {
+  if (req.path.empty()) {
+    error = Error::C

@@ -1,0 +1,3 @@
+  std::string key;
+    std::string val;
+    split(b, e, '=', [&]

@@ -1,0 +1,16 @@
+[i];
+  }
+
+  return ss.str();
+}
+
+std::string MD5(const std::string &s) {
+  return message_digest(s, EVP_md5());
+}
+
+std::string SHA_256(const std::string &s) {
+  return message_digest(s, EVP_sha256());
+}
+
+std::string SHA_512(const std::string &s) {
+  return m

@@ -1,0 +1,6 @@
+turn cli_->Patch(path, body, content_type);
+}
+Result Client::Patch(const std::string &path, const Headers &headers,
+                            const std::string &body,
+                            const std::string &content_type) {
+  return cli_->Patch(path

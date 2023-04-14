@@ -1,0 +1,2 @@
+   if (strm.is_writable() && write_data(strm, d, l)) {
+        o

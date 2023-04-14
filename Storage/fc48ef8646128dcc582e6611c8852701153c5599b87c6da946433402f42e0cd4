@@ -1,0 +1,3 @@
+) {
+        if (server_certificate_verification_) {
+          if

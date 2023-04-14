@@ -1,0 +1,4 @@
+headers) {
+  Request req;
+  req.method = "HEAD";
+  req.headers =

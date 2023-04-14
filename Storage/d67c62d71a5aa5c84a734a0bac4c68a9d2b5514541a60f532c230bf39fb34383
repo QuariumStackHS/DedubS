@@ -1,0 +1,11 @@
+ != params.begin()) { query += "&"; }
+    query += it->first;
+    query += "=";
+    query += encode_query_param(it->second);
+  }
+  return query;
+}
+
+void parse_query_text(const std::string &s, Params &params) {
+  std::set<std::string> cache;
+  split(s.data()

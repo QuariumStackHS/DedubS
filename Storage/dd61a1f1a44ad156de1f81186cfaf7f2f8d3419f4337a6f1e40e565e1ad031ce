@@ -1,0 +1,6 @@
+     [](socket_t sock, struct addrinfo &ai) -> bool {
+        if (::bind(sock, ai.ai_addr, static_cast<socklen_t>(ai.ai_addrlen))) {
+          return false;
+        }
+        if (::listen(sock, CPPHTTPLIB_LISTEN_BACKLOG)) { return false; }
+        return t

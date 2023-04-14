@@ -1,0 +1,5 @@
+c = ss.str();
+  }
+
+  std::string qop;
+  if (auth.find("qop") != 

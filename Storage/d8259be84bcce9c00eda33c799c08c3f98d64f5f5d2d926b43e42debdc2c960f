@@ -1,0 +1,7 @@
+CPPHTTPLIB_OPENSSL_SUPPORT
+  proxy_digest_auth_username_ = rhs.proxy_digest_auth_username_;
+  proxy_digest_auth_password_ = rhs.proxy_digest_auth_password_;
+#endif
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+  ca_cert_file_path_ = rhs.ca_cert_file_path_;
+  ca_cert_d

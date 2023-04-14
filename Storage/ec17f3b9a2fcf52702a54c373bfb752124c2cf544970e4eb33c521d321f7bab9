@@ -1,0 +1,4 @@
+                                     bool last, Callback callback) {
+  std::array<uint8_t, CPPHTTPLIB_COMPRESSION_BUFSIZ> buff{};
+
+  auto operation = last 

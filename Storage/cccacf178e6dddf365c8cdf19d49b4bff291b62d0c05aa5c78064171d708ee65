@@ -1,0 +1,19 @@
+"Content-Range: ");
+    stoken(make_content_range_header_field(offset, length, res.body.size()));
+    ctoken("\r\n");
+    ctoken("\r\n");
+    if (!content(offset, length)) { return false; }
+    ctoken("\r\n");
+  }
+
+  ctoken("--");
+  stoken(boundary);
+  ctoken("--\r\n");
+
+  return true;
+}
+
+bool make_multipart_ranges_data(const Request &req, Response &res,
+                                       const std::string &boundary,
+                                       const std::string &content_type,
+               

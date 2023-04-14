@@ -1,0 +1,2 @@
+     [&](SSL *ssl2) {
+        return detail::ssl_connect_or_acce

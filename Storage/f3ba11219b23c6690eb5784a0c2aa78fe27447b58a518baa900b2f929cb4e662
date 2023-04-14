@@ -1,0 +1,9 @@
+ | POLLOUT;
+
+  auto timeout = static_cast<int>(sec * 1000 + usec / 1000);
+
+  auto poll_res = handle_EINTR([&]() { return poll(&pfd_read, 1, timeout); });
+
+  if (poll_res == 0) { return Error::ConnectionTimeout; }
+
+  if (poll_res > 0 && pfd_read.revents & (

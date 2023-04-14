@@ -1,0 +1,3 @@
+
+            is_valid_ = true;
+            buf_erase(buf_size())

@@ -1,0 +1,7 @@
+TX_free(ctx_);
+      ctx_ = nullptr;
+    }
+  }
+}
+
+SSLClient::~SS

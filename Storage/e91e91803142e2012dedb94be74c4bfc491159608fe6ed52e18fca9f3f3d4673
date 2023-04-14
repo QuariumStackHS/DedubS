@@ -1,0 +1,3 @@
+svg+xml";
+  case "webp"_t: return "image/webp";
+  case "ico"_t: 

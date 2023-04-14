@@ -1,0 +1,4 @@
+;
+
+  for (auto c : in) {
+    val = (val << 8) + static_cast<uint

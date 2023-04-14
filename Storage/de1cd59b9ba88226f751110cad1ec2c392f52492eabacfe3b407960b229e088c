@@ -1,0 +1,3 @@
+ { result.append(buff, len); }
+          i += 5; // 'u0000'
+    

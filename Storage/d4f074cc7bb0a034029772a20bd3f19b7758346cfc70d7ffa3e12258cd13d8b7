@@ -1,0 +1,3 @@
+t<int>(sock), BIO_NOCLOSE);
+    BIO_set_nbio(bio, 1);
+    SSL_se

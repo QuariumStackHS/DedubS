@@ -1,0 +1,6 @@
+
+
+bool SSLClient::load_certs() {
+  bool ret = true;
+
+  std::call

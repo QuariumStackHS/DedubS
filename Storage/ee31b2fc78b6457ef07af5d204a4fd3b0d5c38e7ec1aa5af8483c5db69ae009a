@@ -1,0 +1,4 @@
+l, shutdown_gracefully);
+    socket.ssl = nullptr;
+  }
+  assert(

@@ -1,0 +1,3 @@
+sl_new(
+      socket.sock, ctx_, ctx_mutex_,
+      [&](SSL *ssl2

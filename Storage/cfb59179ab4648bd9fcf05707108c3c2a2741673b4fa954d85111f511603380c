@@ -1,0 +1,1 @@
+ int_no && exponent <= 0 && exponent >= MIN_10_EXP - (DIG + 2)

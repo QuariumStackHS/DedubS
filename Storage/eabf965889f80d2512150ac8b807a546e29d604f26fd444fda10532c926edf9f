@@ -1,0 +1,4 @@
+e.clear();
+  }
+
+  bool start_with_case_ignore(const std::string 

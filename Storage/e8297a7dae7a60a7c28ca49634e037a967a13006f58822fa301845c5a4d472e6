@@ -1,0 +1,6 @@
+ring &path, const char *body,
+                             size_t content_length,
+                             const std::string &content_type) {
+  return cli_->Delete(path, body, content_length, content_type);
+}
+Result Client::Delete(const std::string &pa

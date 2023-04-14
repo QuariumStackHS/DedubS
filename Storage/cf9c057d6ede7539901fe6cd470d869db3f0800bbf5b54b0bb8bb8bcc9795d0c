@@ -1,0 +1,3 @@
+ail::has_crlf(url)) {
+    set_header("Location", url);
+    if (3

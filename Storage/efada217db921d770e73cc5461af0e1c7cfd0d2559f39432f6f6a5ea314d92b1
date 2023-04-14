@@ -1,0 +1,10 @@
+lace("User-Agent", agent);
+  }
+#endif
+
+  if (req.body.empty()) {
+    if (req.content_provider_) {
+      if (!req.is_chunked_content_provider_) {
+        if (!req.has_header("Content-Length")) {
+          auto length = std::to_string(req.content_length_);
+  

@@ -1,0 +1,3 @@
+ active
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+  assert(socket.ssl ==

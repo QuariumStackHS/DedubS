@@ -1,0 +1,13 @@
+nonce") + ":" + nc + ":" + cnonce +
+                   ":" + qop + ":" + H(A2));
+    }
+  }
+
+  auto opaque = (auth.find("opaque") != auth.end()) ? auth.at("opaque") : "";
+
+  auto field = "Digest username=\"" + username + "\", realm=\"" +
+               auth.at("realm") + "\", nonce=\"" + auth.at("nonce") +
+               "\", uri=\"" + req.path + "\", algorithm=" + algo +
+               (qop.empty() ? ", response=\""
+                            : ", qop=" + qop + ", nc=" + nc + ", cnonce=\"" +
+              

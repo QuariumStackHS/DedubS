@@ -1,0 +1,2 @@
+s progress) {
+  return cli_->Get(path, std::move(response_handle

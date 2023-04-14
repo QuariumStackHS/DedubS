@@ -1,0 +1,10 @@
+ompressor, error);
+}
+
+template <typename T>
+bool redirect(T &cli, Request &req, Response &res,
+                     const std::string &path, const std::string &location,
+                     Error &error) {
+  Request new_req = req;
+  new_req.path = path;
+  

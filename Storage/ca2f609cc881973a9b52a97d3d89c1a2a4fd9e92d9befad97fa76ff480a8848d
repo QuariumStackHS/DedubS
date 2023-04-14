@@ -1,0 +1,10 @@
+.str(1).empty()) {
+          first = static_cast<ssize_t>(std::stoll(cm.str(1)));
+        }
+
+        ssize_t last = -1;
+        if (!cm.str(2).empty()) {
+          last = static_cast<ssize_t>(std::stoll(cm.str(2)));
+        }
+
+        if (first != -1 && la

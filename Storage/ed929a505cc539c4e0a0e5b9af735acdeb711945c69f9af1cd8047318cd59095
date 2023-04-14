@@ -1,0 +1,3 @@
+ compressor;
+#ifdef CPPHTTPLIB_ZLIB_SUPPORT
+    if (compress_) {

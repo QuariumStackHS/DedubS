@@ -1,0 +1,2 @@
+509_STORE *store) {
+  auto hStore = CertOpenSystemStoreW((HCRYPT

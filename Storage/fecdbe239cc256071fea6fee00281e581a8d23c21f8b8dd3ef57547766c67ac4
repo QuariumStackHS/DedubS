@@ -1,0 +1,2 @@
+c_cast<size_t>(size));
+  fs.read(&out[0], static_cast<std::strea

@@ -1,0 +1,9 @@
+ve(out),
+                              decompress_)) {
+      if (error != Error::Canceled) { error = Error::Read; }
+      return false;
+    }
+  }
+
+  if (res.get_header_value("Connection") == "close" ||
+      (res.version == "HTTP/1.0" && res.reason != "Conn

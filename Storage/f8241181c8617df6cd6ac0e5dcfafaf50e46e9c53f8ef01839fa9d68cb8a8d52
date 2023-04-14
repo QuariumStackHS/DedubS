@@ -1,0 +1,3 @@
+ | (code & 0x3F));
+    return 3;
+  } else if (code < 0xE000) { /

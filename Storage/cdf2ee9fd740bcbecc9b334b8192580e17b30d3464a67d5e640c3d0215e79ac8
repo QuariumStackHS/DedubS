@@ -1,0 +1,2 @@
+rom_keychain(CFObjectPtr<CFArrayRef> &certs) {
+  CFStringRef key

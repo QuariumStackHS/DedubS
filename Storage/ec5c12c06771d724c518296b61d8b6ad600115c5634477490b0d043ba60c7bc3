@@ -1,0 +1,12 @@
+;
+}
+
+void Client::set_default_headers(Headers headers) {
+  cli_->set_default_headers(std::move(headers));
+}
+
+void Client::set_address_family(int family) {
+  cli_->set_address_family(family);
+}
+
+void Client::set_tcp_nodelay(bool on) { cli_->set_tcp_nodelay(o

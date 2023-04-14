@@ -1,0 +1,4 @@
+h_boundary_ = crlf_ + dash_ + boundary_;
+  }
+
+  bool is_valid() 

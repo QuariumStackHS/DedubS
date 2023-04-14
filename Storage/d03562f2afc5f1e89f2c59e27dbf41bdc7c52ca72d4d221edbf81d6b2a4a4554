@@ -1,0 +1,8 @@
+uff{};
+  while (decoder_r == BROTLI_DECODER_RESULT_NEEDS_MORE_OUTPUT) {
+    char *next_out = buff.data();
+    size_t avail_out = buff.size();
+
+    decoder_r = BrotliDecoderDecompressStream(
+        decoder_s, &avail_in, &next_in, &avail_out,
+        reinte

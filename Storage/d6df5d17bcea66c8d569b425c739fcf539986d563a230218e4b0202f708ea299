@@ -1,0 +1,2 @@
+t_type) {
+  return cli_->Patch(path, headers, std::move(content_

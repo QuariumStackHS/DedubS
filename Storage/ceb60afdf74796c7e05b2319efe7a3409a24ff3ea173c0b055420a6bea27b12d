@@ -1,0 +1,12 @@
+nt_with_provider(strm, req, res, boundary, content_type)) {
+        res.content_provider_success_ = true;
+      } else {
+        res.content_provider_success_ = false;
+        ret = false;
+      }
+    }
+  }
+
+  // Log
+  if (logger_) { logger_(req, res); }
+

@@ -1,0 +1,2 @@
+str2tag(const std::string &s) {
+  return str2tag_core(s.data(), 

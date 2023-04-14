@@ -1,0 +1,7 @@
+
+
+  if (!proxy_basic_auth_username_.empty() &&
+      !proxy_basic_auth_password_.empty()) {
+    if (!req.has_header("Proxy-Authorization")) {
+      req.headers.insert(make_basic_authentication_header(
+          proxy_basic_auth_username_, proxy_basic_auth_p

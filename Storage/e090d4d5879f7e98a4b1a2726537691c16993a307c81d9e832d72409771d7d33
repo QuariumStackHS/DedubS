@@ -1,0 +1,16 @@
+ol bind_ip_address(socket_t sock, const std::string &host) {
+  struct addrinfo hints;
+  struct addrinfo *result;
+
+  memset(&hints, 0, sizeof(struct addrinfo));
+  hints.ai_family = AF_UNSPEC;
+  hints.ai_socktype = SOCK_STREAM;
+  hints.ai_protocol = 0;
+
+  if (getaddrinfo(host.c_str(), "0", &hints, &result)) { return false; }
+
+  auto ret = false;
+  for (auto rp = result; rp; rp = rp->ai_next) {
+    const auto &ai = *rp;
+    if (!::bind(sock, ai.ai_addr, static_cast<socklen_t>(ai.ai_addrlen))) {
+      ret = tru

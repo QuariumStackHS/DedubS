@@ -1,0 +1,14 @@
+  }
+}
+
+size_t stream_line_reader::size() const {
+  if (glowable_buffer_.empty()) {
+    return fixed_buffer_used_size_;
+  } else {
+    return glowable_buffer_.size();
+  }
+}
+
+bool stream_line_reader::end_with_crlf() const {
+  auto end = ptr() + size();
+  retu

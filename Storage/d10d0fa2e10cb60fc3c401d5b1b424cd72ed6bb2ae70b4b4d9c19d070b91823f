@@ -1,0 +1,6 @@
+          detail::get_range_offset_and_length(req, res.body.size(), 0);
+      auto offset = offsets.first;
+      auto length = offsets.second;
+      auto content_range = detail::make_content_range_header_field(
+          offset, length, res.body.size());
+  

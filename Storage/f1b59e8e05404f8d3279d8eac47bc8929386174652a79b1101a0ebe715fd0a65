@@ -1,0 +1,6 @@
+  const std::string &content_type) {
+  return send_with_content_provider("POST", path, headers, body, content_length,
+                                    nullptr, nullptr, content_type);
+}
+
+Result ClientImpl::Post(const std::string &path, const std::string

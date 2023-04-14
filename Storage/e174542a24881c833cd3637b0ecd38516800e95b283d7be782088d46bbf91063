@@ -1,0 +1,4 @@
+  }
+}
+
+ssize_t SocketStream::write(const char *ptr, size_t size)

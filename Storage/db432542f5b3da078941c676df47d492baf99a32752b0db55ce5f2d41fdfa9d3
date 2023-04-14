@@ -1,0 +1,13 @@
+                  const std::string &body,
+                                 const std::string &content_type) {
+  return Delete(path, Headers(), body.data(), body.size(), content_type);
+}
+
+Result ClientImpl::Delete(const std::string &path,
+                                 const Headers &headers,
+                                 const std::string &body,
+                                 const std::string &content_type) {
+  return Delete(path, headers, body.data(), body.size(), content_type);
+}
+
+Result ClientIm

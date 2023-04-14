@@ -1,0 +1,8 @@
+losed) {
+        SocketStream strm(sock, read_timeout_sec, read_timeout_usec,
+                          write_timeout_sec, write_timeout_usec);
+        return callback(strm, close_connection, connection_closed);
+      });
+}
+
+bool process_client_socket(socke

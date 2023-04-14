@@ -1,0 +1,10 @@
+ auto bufsiz = 2048;
+  char buf[bufsiz];
+  stream_line_reader line_reader(strm, buf, bufsiz);
+
+  for (;;) {
+    if (!line_reader.getline()) { return false; }
+
+    // Check if the line ends with CRLF.
+    auto line_terminator_len = 2;
+    if (line_reader.en

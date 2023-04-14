@@ -1,0 +1,6 @@
+_usec_,
+                write_timeout_sec_, write_timeout_usec_, [&](Stream &strm) {
+                  Request req3;
+                  req3.method = "CONNECT";
+                  req3.path = host_and_port_;
+                  req3.headers.insert(detail::make_

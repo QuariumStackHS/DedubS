@@ -1,0 +1,11 @@
+ate_n(str.begin(), length, randchar);
+  return str;
+}
+
+class ContentProviderAdapter {
+public:
+  explicit ContentProviderAdapter(
+      ContentProviderWithoutLength &&content_provider)
+      : content_provider_(content_provider) {}
+
+  bool operator()(size_t 

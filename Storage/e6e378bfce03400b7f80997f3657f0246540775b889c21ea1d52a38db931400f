@@ -1,0 +1,11 @@
+ttern), std::move(handler)));
+  return *this;
+}
+
+Server &Server::Post(const std::string &pattern, Handler handler) {
+  post_handlers_.push_back(
+      std::make_pair(std::regex(pattern), std::move(handler)));
+  return *this;
+}
+
+Server &Server::Post(const st

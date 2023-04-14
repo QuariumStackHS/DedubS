@@ -1,0 +1,4 @@
+ progress) {
+  Request req;
+  req.method = "GET";
+  req.path = p

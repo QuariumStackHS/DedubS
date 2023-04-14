@@ -1,0 +1,8 @@
+turn true;
+}
+
+template <typename T>
+bool write_content(Stream &strm, const ContentProvider &content_provider,
+                          size_t offset, size_t length, T is_shutting_down,
+                          Error &error) {
+  size_t end_offset = offset

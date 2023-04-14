@@ -1,0 +1,4 @@
+i_->is_valid();
+}
+
+Result Client::Get(const std::string &path) {

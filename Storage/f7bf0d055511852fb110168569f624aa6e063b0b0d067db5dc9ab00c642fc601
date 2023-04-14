@@ -1,0 +1,17 @@
+)) { return false; }
+  }
+
+  return true;
+}
+
+bool is_chunked_transfer_encoding(const Headers &headers) {
+  return !strcasecmp(get_header_value(headers, "Transfer-Encoding", 0, ""),
+                     "chunked");
+}
+
+template <typename T, typename U>
+bool prepare_content_receiver(T &x, int &status,
+                              ContentReceiverWithProgress receiver,
+                              bool decompress, U callback) {
+  if (decompress) {
+    std::string encoding = x.get_header_value("Content-Encoding"

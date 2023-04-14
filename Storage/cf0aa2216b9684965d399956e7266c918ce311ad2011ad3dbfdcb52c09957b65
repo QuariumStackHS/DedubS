@@ -1,0 +1,8 @@
+::string, std::string> make_range_header(Ranges ranges) {
+  std::string field = "bytes=";
+  auto i = 0;
+  for (auto r : ranges) {
+    if (i != 0) { field += ", "; }
+    if (r.first != -1) { field += std::to_string(r.first); }
+    field += '-';
+    if (r.sec

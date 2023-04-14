@@ -1,0 +1,17 @@
+} else {
+      level++;
+    }
+
+    // Skip slash
+    while (i < path.size() && path[i] == '/') {
+      i++;
+    }
+  }
+
+  return true;
+}
+
+std::string encode_query_param(const std::string &value) {
+  std::ostringstream escaped;
+  escaped.fill('0');
+  escaped

@@ -1,0 +1,12 @@
+if (!out(buf, static_cast<size_t>(n), r, len)) { return false; }
+    r += static_cast<uint64_t>(n);
+
+    if (progress) {
+      if (!progress(r, len)) { return false; }
+    }
+  }
+
+  return true;
+}
+
+void skip_content_with_length(Stream &strm, uint64_t len) {

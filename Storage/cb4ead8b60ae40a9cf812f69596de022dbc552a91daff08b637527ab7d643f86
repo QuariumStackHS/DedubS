@@ -1,0 +1,5 @@
+{
+  std::string nc;
+  {
+    std::stringstream ss;
+    ss << std:

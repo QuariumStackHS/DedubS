@@ -1,0 +1,9 @@
+ return buf_size(); }
+        if (buf_[pos] == c) { break; }
+        pos++;
+      }
+
+      auto remaining_size = buf_epos_ - pos;
+      if (s.size() > remaining_size) { return buf_size(); }
+
+      if (start_with(buf_, pos, buf_epos_, s)) { return pos - buf

@@ -1,0 +1,14 @@
+;
+    shutdown_ssl(socket_, true);
+    shutdown_socket(socket_);
+    close_socket(socket_);
+  }
+
+  // Log
+  if (logger_) { logger_(req, res); }
+
+  return true;
+}
+
+ContentProviderWithoutLength ClientImpl::get_multipart_content_provider(
+    const std::strin

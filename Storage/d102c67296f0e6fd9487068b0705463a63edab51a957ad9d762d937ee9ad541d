@@ -1,0 +1,11 @@
+);
+    std::unique_ptr<decompressor> decompressor;
+
+    if (encoding == "gzip" || encoding == "deflate") {
+#ifdef CPPHTTPLIB_ZLIB_SUPPORT
+      decompressor = detail::make_unique<gzip_decompressor>();
+#else
+      status = 415;
+      return false;
+#endif
+  

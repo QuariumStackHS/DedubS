@@ -1,0 +1,3 @@
+= nullptr;
+    } else if (client_ca_cert_store) {
+      SSL_CTX_

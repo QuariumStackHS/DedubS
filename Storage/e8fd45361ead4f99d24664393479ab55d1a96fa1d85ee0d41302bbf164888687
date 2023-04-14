@@ -1,0 +1,8 @@
+                            dummy_status, std::move(progress), std::move(out),
+                              decompress_)) {
+      if (error != Error::Canceled) { error = Error::Read; }
+      return false;
+    }
+  }
+
+  if (res.get_header_value("Connection"

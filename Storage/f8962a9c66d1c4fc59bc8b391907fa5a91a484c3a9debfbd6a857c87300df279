@@ -1,0 +1,8 @@
+ypename T>
+bool
+write_content_without_length(Stream &strm,
+                             const ContentProvider &content_provider,
+                             const T &is_shutting_down) {
+  size_t offset = 0;
+  auto data_available = true;
+  auto ok = true;

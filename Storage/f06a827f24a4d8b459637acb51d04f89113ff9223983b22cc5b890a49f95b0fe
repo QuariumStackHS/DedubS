@@ -1,0 +1,7 @@
+   }
+    }
+  }
+
+  // Log
+  if (logger_) { logger_(req, res); }
+

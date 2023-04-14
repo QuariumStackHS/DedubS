@@ -1,0 +1,5 @@
+) == "close" ||
+      (res.version == "HTTP/1.0" && res.reason != "Connection established")) {
+    // TODO this requires a not-entirely-obvious chain of calls to be correct
+    // for this to be safe. Maybe a code refactor (such as moving this out to
+    /

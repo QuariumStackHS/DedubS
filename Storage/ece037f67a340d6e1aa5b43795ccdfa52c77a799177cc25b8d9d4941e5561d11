@@ -1,0 +1,108 @@
+          const std::string &content_type) {
+  return Patch(path, Headers(), body, content_type);
+}
+
+Result ClientImpl::Patch(const std::string &path, const Headers &headers,
+                                const std::string &body,
+                                const std::string &content_type) {
+  return send_with_content_provider("PATCH", path, headers, body.data(),
+                                    body.size(), nullptr, nullptr,
+                                    content_type);
+}
+
+Result ClientImpl::Patch(const std::string &path, size_t content_length,
+                                ContentProvider content_provider,
+                                const std::string &content_type) {
+  return Patch(path, Headers(), content_length, std::move(content_provider),
+               content_type);
+}
+
+Result ClientImpl::Patch(const std::string &path,
+                                ContentProviderWithoutLength content_provider,
+                                const std::string &content_type) {
+  return Patch(path, Headers(), std::move(content_provider), content_type);
+}
+
+Result ClientImpl::Patch(const std::string &path, const Headers &headers,
+                                size_t content_length,
+                                ContentProvider content_provider,
+                                const std::string &content_type) {
+  return send_with_content_provider("PATCH", path, headers, nullptr,
+                                    content_length, std::move(content_provider),
+                                    nullptr, content_type);
+}
+
+Result ClientImpl::Patch(const std::string &path, const Headers &headers,
+                                ContentProviderWithoutLength content_provider,
+                                const std::string &content_type) {
+  return send_with_content_provider("PATCH", path, headers, nullptr, 0, nullptr,
+                                    std::move(content_provider), content_type);
+}
+
+Result ClientImpl::Delete(const std::string &path) {
+  return Delete(path, Headers(), std::string(), std::string());
+}
+
+Result ClientImpl::Delete(const std::string &path,
+                                 const Headers &headers) {
+  return Delete(path, headers, std::string(), std::string());
+}
+
+Result ClientImpl::Delete(const std::string &path, const char *body,
+                                 size_t content_length,
+                                 const std::string &content_type) {
+  return Delete(path, Headers(), body, content_length, content_type);
+}
+
+Result ClientImpl::Delete(const std::string &path,
+                                 const Headers &headers, const char *body,
+                                 size_t content_length,
+                                 const std::string &content_type) {
+  Request req;
+  req.method = "DELETE";
+  req.headers = headers;
+  req.path = path;
+
+  if (!content_type.empty()) {
+    req.headers.emplace("Content-Type", content_type);
+  }
+  req.body.assign(body, content_length);
+
+  return send_(std::move(req));
+}
+
+Result ClientImpl::Delete(const std::string &path,
+                                 const std::string &body,
+                                 const std::string &content_type) {
+  return Delete(path, Headers(), body.data(), body.size(), content_type);
+}
+
+Result ClientImpl::Delete(const std::string &path,
+                                 const Headers &headers,
+                                 const std::string &body,
+                                 const std::string &content_type) {
+  return Delete(path, headers, body.data(), body.size(), content_type);
+}
+
+Result ClientImpl::Options(const std::string &path) {
+  return Options(path, Headers());
+}
+
+Result ClientImpl::Options(const std::string &path,
+                                  const Headers &headers) {
+  Request req;
+  req.method = "OPTIONS";
+  req.headers = headers;
+  req.path = path;
+
+  return send_(std::move(req));
+}
+
+size_t ClientImpl::is_socket_open() const {
+  std::lock_guard<std::mutex> guard(socket_mutex_);
+  return socket_.is_open();
+}
+
+socket_t ClientImpl::socket() const { return socket_.sock; }
+
+void ClientIm

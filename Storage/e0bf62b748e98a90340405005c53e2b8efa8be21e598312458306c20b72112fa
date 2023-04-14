@@ -1,0 +1,12 @@
+    auto success = false;
+          if (!scli.connect_with_proxy(socket_, res, success, error)) {
+            return success;
+          }
+        }
+
+        if (!scli.initialize_ssl(socket_, error)) { return false; }
+      }
+#endif
+    }
+
+    // Mark the c

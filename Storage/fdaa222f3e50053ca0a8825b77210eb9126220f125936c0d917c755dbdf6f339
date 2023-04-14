@@ -1,0 +1,5 @@
+ is_shutting_down,
+                       error);
+}
+
+template <t

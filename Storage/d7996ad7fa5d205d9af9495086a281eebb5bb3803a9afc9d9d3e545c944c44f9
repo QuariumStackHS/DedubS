@@ -1,0 +1,3 @@
+ not thread-safe.
+  assert(socket_requests_in_flight_ == 0 ||
+  

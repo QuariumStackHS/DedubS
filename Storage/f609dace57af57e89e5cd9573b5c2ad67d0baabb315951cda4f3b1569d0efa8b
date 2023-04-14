@@ -1,0 +1,2 @@
+td::move(boundary));
+    out = [&](const char *buf, size_t n, ui

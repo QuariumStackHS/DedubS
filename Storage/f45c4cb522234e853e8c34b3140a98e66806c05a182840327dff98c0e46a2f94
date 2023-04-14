@@ -1,0 +1,9 @@
+y,
+                       SocketOptions socket_options,
+                       BindOrConnect bind_or_connect) {
+  // Get address info
+  const char *node = nullptr;
+  struct addrinfo hints;
+  struct addrinfo *result;
+
+  memset(&hints, 0, sizeof(struct addrin

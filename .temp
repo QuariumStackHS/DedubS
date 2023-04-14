@@ -1,0 +1,35 @@
+ while (data_available && !is_shutting_down()) {
+    if (!strm.is_writable()) {
+      error = Error::Write;
+      return false;
+    } else if (!content_provider(offset, 0, data_sink)) {
+      error = Error::Canceled;
+      return false;
+    } else if (!ok) {
+      error = Error::Write;
+      return false;
+    }
+  }
+
+  error = Error::Success;
+  return true;
+}
+
+template <typename T, typename U>
+bool write_content_chunked(Stream &strm,
+                                  const ContentProvider &content_provider,
+                                  const T &is_shutting_down, U &compressor) {
+  auto error = Error::Success;
+  return write_content_chunked(strm, content_provider, is_shutting_down,
+                               compressor, error);
+}
+
+template <typename T>
+bool redirect(T &cli, Request &req, Response &res,
+                     const std::string &path, const std::string &location,
+                     Error &error) {
+  Request new_req = req;
+  new_req.path = path;
+  new_req.redirect_count_ -= 1;
+
+  if (res.

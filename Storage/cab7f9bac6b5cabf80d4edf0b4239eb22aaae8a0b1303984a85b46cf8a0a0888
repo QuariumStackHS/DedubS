@@ -1,0 +1,9 @@
+f, n);
+            return true;
+          },
+          // Multipart
+          [&](const MultipartFormData &file) {
+            if (file_count++ == CPPHTTPLIB_MULTIPART_FORM_DATA_FILE_MAX_COUNT) {
+              return false;
+            }
+            cur = 

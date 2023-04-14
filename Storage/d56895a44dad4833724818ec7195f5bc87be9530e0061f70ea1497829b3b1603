@@ -1,0 +1,20 @@
+              WSAGetLastError() == WSAETIMEDOUT))) {
+#else
+      while (--n >= 0 && err == SSL_ERROR_WANT_WRITE) {
+#endif
+        if (is_writable()) {
+          std::this_thread::sleep_for(std::chrono::milliseconds(1));
+          ret = SSL_write(ssl_, ptr, static_cast<int>(handle_size));
+          if (ret >= 0) { return ret; }
+          err = SSL_get_error(ssl_, ret);
+        } else {
+          return -1;
+        }
+      }
+    }
+    return ret;
+  }
+  return -1;
+}
+
+void SSLSocketStream::get_remote_ip_and_por

@@ -1,0 +1,5 @@
+ }
+    return ok;
+  };
+
+  data_sink.done = [&](void) { data_avai

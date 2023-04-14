@@ -1,0 +1,16 @@
+rite(const char *ptr, size_t size) {
+  buffer.append(ptr, size);
+  return static_cast<ssize_t>(size);
+}
+
+void BufferStream::get_remote_ip_and_port(std::string & /*ip*/,
+                                                 int & /*port*/) const {}
+
+void BufferStream::get_local_ip_and_port(std::string & /*ip*/,
+                                                int & /*port*/) const {}
+
+socket_t BufferStream::socket() const { return 0; }
+
+const std::string &BufferStream::get_buffer() const { return buffer; }
+
+} // n

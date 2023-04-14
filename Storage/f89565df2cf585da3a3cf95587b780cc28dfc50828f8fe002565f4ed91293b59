@@ -1,0 +1,7 @@
+ptr,
+                                    content_length, std::move(content_provider),
+                                    nullptr, content_type);
+}
+
+Result ClientImpl::Post(const std::string &path, const Headers &headers,
+                               Con

@@ -1,0 +1,8 @@
+d::make_pair(key, std::move(field));
+}
+
+std::pair<std::string, std::string>
+make_bearer_token_authentication_header(const std::string &token,
+                                        bool is_proxy = false) {
+  auto field = "Bearer " + token;
+  auto key = is_proxy 

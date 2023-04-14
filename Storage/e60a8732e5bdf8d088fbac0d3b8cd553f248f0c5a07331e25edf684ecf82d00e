@@ -1,0 +1,7 @@
+const std::string &path, const Headers &headers) {
+  return cli_->Head(path, headers);
+}
+
+Result Client::Post(const std::string &path) { return cli_->Post(path); }
+Result Client::Post(const std::string &path, const Headers &headers) {
+  return cli_->Post(p

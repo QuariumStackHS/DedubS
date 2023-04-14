@@ -1,0 +1,3 @@
+ert(compressor != nullptr);
+
+      return detail::write_content_

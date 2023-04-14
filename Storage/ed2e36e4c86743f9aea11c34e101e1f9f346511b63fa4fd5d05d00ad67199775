@@ -1,0 +1,14 @@
+ static_cast<int>(handle_size));
+          if (ret >= 0) { return ret; }
+          err = SSL_get_error(ssl_, ret);
+        } else {
+          return -1;
+        }
+      }
+    }
+    return ret;
+  }
+  return -1;
+}
+
+void SSLSocketStream::get_remote_ip_and_por

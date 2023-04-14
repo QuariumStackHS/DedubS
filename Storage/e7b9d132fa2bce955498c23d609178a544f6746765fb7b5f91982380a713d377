@@ -1,0 +1,3 @@
+;
+
+  auto operation = last ? BROTLI_OPERATION_FINISH : BROTLI_OP

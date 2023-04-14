@@ -1,0 +1,14 @@
+imeout_usec_,
+        [this, ssl](Stream &strm, bool close_connection,
+                    bool &connection_closed) {
+          return process_request(strm, close_connection, connection_closed,
+                                 [&](Request &req) { req.ssl = ssl; });
+        });
+
+    // Shutdown gracefully if the result seemed successful, non-gracefully if
+    // the connection appeared to be closed.
+    const bool shutdown_gracefully = ret;
+    detail::ssl_delete(ctx_mutex_, ssl, shutdown_gracefully);
+  }
+
+ 

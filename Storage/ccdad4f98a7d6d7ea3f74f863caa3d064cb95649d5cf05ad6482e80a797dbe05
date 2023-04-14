@@ -1,0 +1,5 @@
+repare_content_receiver(T &x, int &status,
+                              ContentReceiverWithProgress receiver,
+                              bool decompress, U callback) {
+  if (decompress) {
+    std::string encoding = x.get_header_value("Content-Encoding"

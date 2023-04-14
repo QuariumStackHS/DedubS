@@ -1,0 +1,9 @@
+ived function once we get to the
+  // base class destructor, and won't free the SSL (causing a leak).
+  shutdown_ssl_impl(socket_, true);
+}
+
+bool SSLClient::is_valid() const { return ctx_; }
+
+void SSLClient::set_ca_cert_store(X509_STORE *ca_cert_store) {
+  

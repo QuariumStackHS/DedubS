@@ -1,0 +1,12 @@
+ }
+      std::this_thread::sleep_for(std::chrono::milliseconds(1));
+    } else {
+      return true;
+    }
+  }
+}
+
+template <typename T>
+bool
+process_server_socket_core(const std::atomic<socket_t> &svr_sock, socket_t sock,
+                           size_t ke

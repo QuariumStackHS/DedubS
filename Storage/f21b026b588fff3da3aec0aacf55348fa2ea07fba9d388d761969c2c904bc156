@@ -1,0 +1,3 @@
+s);
+}
+Result Client::Get(const std::string &path, Progress progr

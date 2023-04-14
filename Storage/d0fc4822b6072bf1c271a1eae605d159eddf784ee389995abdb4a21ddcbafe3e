@@ -1,0 +1,23 @@
+    << (unsigned int)hash[i];
+  }
+
+  return ss.str();
+}
+
+std::string MD5(const std::string &s) {
+  return message_digest(s, EVP_md5());
+}
+
+std::string SHA_256(const std::string &s) {
+  return message_digest(s, EVP_sha256());
+}
+
+std::string SHA_512(const std::string &s) {
+  return message_digest(s, EVP_sha512());
+}
+#endif
+
+#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+#ifdef _WIN32
+// NOTE: This code came up with the following stackoverflow post:
+// https://stackoverflow.com/questions/9507184/can-openssl-on-windows-use-

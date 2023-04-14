@@ -1,0 +1,2 @@
+r"" _t(const char *s, size_t l) {
+  return str2tag_core(s, l, 0)

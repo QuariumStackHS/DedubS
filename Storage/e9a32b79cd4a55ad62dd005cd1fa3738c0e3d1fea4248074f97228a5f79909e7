@@ -1,0 +1,8 @@
+_SOCKET) { return false; }
+  socket.sock = sock;
+  return true;
+}
+
+void ClientImpl::shutdown_ssl(Socket & /*socket*/,
+                                     bool /*shutdown_gracefully*/) {
+  // If there are any requests in flight from threads other than us, t

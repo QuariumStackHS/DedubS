@@ -1,0 +1,6 @@
+                  content_type);
+}
+Result Client::Post(const std::string &path, const Headers &headers,
+                           ContentProviderWithoutLength content_provider,
+                           const std::string &content_type) {
+  return cli_->Po

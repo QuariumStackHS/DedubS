@@ -1,0 +1,9 @@
+il::get_remote_ip_and_port(sock_, ip, port);
+}
+
+void SocketStream::get_local_ip_and_port(std::string &ip,
+                                                int &port) const {
+  return detail::get_local_ip_and_port(sock_, ip, port);
+}
+
+socket_t SocketStream::
