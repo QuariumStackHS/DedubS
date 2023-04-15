@@ -19,10 +19,30 @@ namespace fs = ::std::filesystem;
 
 using namespace std;
 int chunksize = (1024 / 0.75) - 1;
+class DDindex{
+    public:
+    string Directory="Storage/Index/";
+    DDindex(string directory){
+        Directory=directory;
+    }
+    bool index_append(string filename,string hashs){
+        ofstream F(Directory+b64decode(filename),ios::app);
+        F<<hashs;
+        F.close();
+        return 0;
+    }
+    string index_get(string filename){
+        ifstream F(Directory+filename);
+        stringstream ss;
+        ss<<F.rdbuf();
+        string s=ss.str();
+        return s;
+    }
+};
 class Datadedup
 {
 public:
-    string Directory="Storage/";
+    string Directory="Storage/Blocks/";
     Datadedup(string directory)
     {
         Directory = directory;

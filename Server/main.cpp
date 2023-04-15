@@ -1,7 +1,40 @@
 
 #include "Dedupmf.hpp"
+#include <iostream>
+#include <vector>
+#include <dirent.h>
+#include <sstream>
+using namespace std;
 #include "../common/httplib/httplib.hpp"
 using namespace httplib;
+string listall()
+{
+    stringstream ss;
+    DIR *dir;
+    struct dirent *diread;
+    vector<char *> files;
+
+    if ((dir = opendir("./Storage/Index")) != nullptr)
+    {
+        while ((diread = readdir(dir)) != nullptr)
+        {
+            files.push_back(diread->d_name);
+        }
+        closedir(dir);
+    }
+    else
+    {
+        perror("opendir");
+        return "Nond";
+    }
+    int nbr = 0;
+    for (auto file : files)
+        if (nbr < 2)
+            nbr++;
+        else
+            ss << file << ",";
+    return ss.str();
+}
 std::string dump_headers(const Headers &headers)
 {
     std::string s;
@@ -116,10 +149,12 @@ void list_directory(string path, vector<string> &A)
     for (const auto &entry : fs::directory_iterator(path))
         A.push_back(entry.path());
 }
-Datadedup* DD;
+Datadedup *DD;
+DDindex *DDI;
 int main(void)
 {
-DD=new Datadedup("Storage/");
+    DD = new Datadedup("Storage/Blocks/");
+    DDI = new DDindex("Storage/Index/");
 #ifdef CPPHTTPLIB_OPENSSL_SUPPORT
     SSLServer svr(SERVER_CERT_FILE, SERVER_PRIVATE_KEY_FILE);
 #else
@@ -137,13 +172,16 @@ DD=new Datadedup("Storage/");
 
     svr.Get("/", [=](const Request & /*req*/, Response &res)
             { res.set_redirect("/hi"); });
-    svr.Get("/list", [=](const Request & /*req*/, Response &res)
+    svr.Get("/deps", [=](const Request & /*req*/, Response &res)
             {
     ifstream PackageList("P.List");
     stringstream ss;
     ss<<PackageList.rdbuf();
     Packages=ss.str();
     res.set_content(Packages,"text/plain"); });
+
+    svr.Get("/stop", [&](const Request &req, Response &res)
+            { svr.stop(); });
     svr.set_error_handler([](const Request &req, Response &res)
                           {
                             string commandparser=req.path;
@@ -161,18 +199,23 @@ DD=new Datadedup("Storage/");
                                 SSResponse<<"Done";
                                 //SSResponse<<getstringfrompos(commandparser,1)<<"-->"<<get_args(get_args(commandparser))<<endl;
                               }
+                              if(strcmp(get_command(commandparser).c_str(),"list")==0){
+                                SSResponse<<listall();
+                              }
                               //download on server (upload for client)
                               if(strcmp(get_command(commandparser).c_str(), "exists")==0){
-                                SSResponse<<exists("Storage/"+getstringfrompos(commandparser,1));
+                                SSResponse<<exists("Storage/Blocks/"+getstringfrompos(commandparser,1));
                               }
                               if(strcmp(get_command(commandparser).c_str(), "append")==0){
-                                string filename=getstringfrompos(commandparser,1);
-                                ofstream P(filename,ios::app);
-                                P<<getstringfrompos(commandparser,2);
-                                P.close();
+                                DDI->index_append(getstringfrompos(commandparser,1),getstringfrompos(commandparser,2));
                               }
                             if(strcmp(get_command(commandparser).c_str(), "download")==0){
-                                cout<<"i"<<endl;
+                                SSResponse<<DDI->index_get(getstringfrompos(commandparser,1));
+                                //cout<<"i"<<endl;
+                              }
+                            if(strcmp(get_command(commandparser).c_str(), "remove")==0){
+                                remove(("Storage/Index/"+getstringfrompos(commandparser,1)).c_str());
+                                //cout<<"i"<<endl;
                               }
                               res.set_content(SSResponse.str(), "text/plain"); });
 
