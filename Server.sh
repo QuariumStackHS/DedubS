@@ -1,0 +1,1 @@
+cd src ; sh build_server.sh ; cd .. ; ./Server-bin

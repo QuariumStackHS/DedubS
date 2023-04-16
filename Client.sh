@@ -1,0 +1,1 @@
+cd src ; sh build_client.sh ; cd .. ; ./Client-bin
